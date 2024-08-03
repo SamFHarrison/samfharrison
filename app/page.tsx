@@ -20,7 +20,7 @@ export default function Home() {
         />
 
         <div className="hero-info">
-          <h1>Hi. I&apos;m Sam.</h1>
+          <h1>Hi, I&apos;m Sam.</h1>
 
           <p className="headline">
             I design and build applications for the web and mobile.
