@@ -6,7 +6,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Sam F-Harrison",
   description:
-    "Welcome to the my personal site. I'm a Software Engineer from Elgin, Scotland. Explore my journey in tech, my passions for rugby, snooker and cars, and my insights into UI/UX design and software development.",
+    "Welcome to my personal site. I'm a Software Engineer from Elgin, Scotland. Explore my journey in tech, my passions for rugby, snooker and cars, and my insights into UI/UX design and software development.",
 };
 
 export default function RootLayout({
