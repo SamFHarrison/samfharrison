@@ -26,7 +26,7 @@ export default function Home() {
             I design and build applications for the web and mobile.
           </p>
 
-          <Button>Open this site in Figma</Button>
+          <Button href={Links.Figma}>Open this site in Figma</Button>
 
           <div className="button-group">
             <Button variant="secondary" href={Links.LinkedIn}>

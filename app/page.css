@@ -25,14 +25,6 @@ main {
       p {
         text-align: center;
       }
-
-      button {
-        width: 180px;
-      }
-
-      .button-group a {
-        width: 82px;
-      }
     }
   }
 }
