@@ -1,0 +1,11 @@
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+p.headline {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.29;
+}
