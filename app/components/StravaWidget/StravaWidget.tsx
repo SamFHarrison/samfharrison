@@ -2,14 +2,15 @@
 
 import { Bar, BarChart, Cell, Pie, PieChart, XAxis } from "recharts";
 import "./StravaWidget.css";
+import Icon from "../Icon/Icon";
 
 export default function StravaWidget() {
   const breakdownData = [
     { day: 1, label: "M", distanceRun: 0 },
-    { day: 2, label: "T", distanceRun: 5 },
+    { day: 2, label: "T", distanceRun: 4.53 },
     { day: 3, label: "W", distanceRun: 0 },
     { day: 4, label: "T", distanceRun: 0 },
-    { day: 5, label: "F", distanceRun: 3 },
+    { day: 5, label: "F", distanceRun: 0 },
     { day: 6, label: "S", distanceRun: 10 },
     { day: 7, label: "S", distanceRun: 0 },
   ];
@@ -53,10 +54,6 @@ export default function StravaWidget() {
             tick={{ fill: "#fff", fontFamily: "", fontSize: "10px" }}
           />
         </BarChart>
-        {/* <div className="info">
-          <p className="small-print">Powered by</p>
-          <Image src={StravaLogo} alt="Strava logo" width={40} />
-        </div> */}
       </div>
       <div className="widget-right">
         <PieChart width={160} height={160}>
@@ -73,11 +70,14 @@ export default function StravaWidget() {
               <Cell key={`cell-${index}`} fill={COLORS[index]} stroke="none" />
             ))}
           </Pie>
-          <div className="summary-info">
-            <p>{summaryData[0].value}</p>
-            <p>{`of ${summaryData[1].value}`}</p>
-          </div>
         </PieChart>
+        <div className="summary-info">
+          <Icon name="run" />
+          <p className="display-large">{summaryData[0].value.toFixed(2)}</p>
+          <p className="footnote">{`of ${
+            summaryData[0].value + summaryData[1].value
+          }km`}</p>
+        </div>
       </div>
     </div>
   );
