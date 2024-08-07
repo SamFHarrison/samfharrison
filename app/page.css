@@ -41,7 +41,14 @@ main {
 /* @media (prefers-reduced-motion) {} */
 
 /* TODO: Mobile */
-/* @media (max-width: 700px) {} */
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 60px;
+    gap: 50px;
+  }
+}
 
 /* TODO: Tablet and Smaller Desktop */
 /* @media (min-width: 701px) and (max-width: 1120px) {} */
