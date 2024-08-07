@@ -30,13 +30,6 @@ main {
   }
 }
 
-/* * Utility Classes */
-
-.button-group {
-  display: flex;
-  gap: var(--spacing-medium);
-}
-
 /* TODO: reduced motion */
 /* @media (prefers-reduced-motion) {} */
 

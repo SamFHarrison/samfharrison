@@ -10,23 +10,23 @@ a {
   color: white;
 
   min-width: 6rem;
-  padding: 6px 16px;
+  padding: 6px 32px;
   border-radius: 999px;
   border: none;
   cursor: pointer;
 
   &.primary-button {
-    background-color: var(--blue-100);
+    background-color: var(--blue-primary-100);
   }
 
   &.secondary-button {
-    background-color: var(--blue-15);
-    color: var(--blue-100);
+    background-color: var(--blue-primary-15);
+    color: var(--blue-primary-100);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 
     &:hover {
-      background-color: var(--blue-35);
+      background-color: var(--blue-primary-35);
     }
   }
 }

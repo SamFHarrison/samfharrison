@@ -17,68 +17,75 @@ export default function StravaWidget() {
 
   const summaryData = [
     {
-      name: "Total Distance",
+      name: "Total distance run",
       value: breakdownData.reduce((total, item) => total + item.distanceRun, 0),
     },
     {
-      name: "Goal Distance",
+      name: "Distance left to hit goal",
       value:
         20 - breakdownData.reduce((total, item) => total + item.distanceRun, 0),
     },
   ];
 
-  const COLORS = ["#007aff", "#7f7f7f50"];
+  const COLORS = ["#007aff", "none"];
 
   return (
-    <div className="card">
-      <div className="widget-left">
-        <BarChart
-          data={breakdownData}
-          id="distance-chart"
-          width={150}
-          height={80}
-          margin={{ bottom: 0, left: 0, right: 0, top: 0 }}
-          barCategoryGap={5}
-        >
-          <Bar
-            dataKey="distanceRun"
-            id="distance-bar"
-            fill="#007aff"
-            minPointSize={1}
-          />
-          <XAxis
-            dataKey="label"
-            height={16}
-            axisLine={false}
-            tickLine={false}
-            tick={{ fill: "#fff", fontFamily: "", fontSize: "10px" }}
-          />
-        </BarChart>
-      </div>
-      <div className="widget-right">
-        <PieChart width={160} height={160}>
-          <Pie
-            data={summaryData}
-            dataKey="value"
-            fill="#007aff"
-            innerRadius={56}
-            outerRadius={60}
-            startAngle={450}
-            endAngle={90}
+    <div className="prototype-container">
+      <div className="card">
+        <div className="widget-left">
+          <BarChart
+            data={breakdownData}
+            id="distance-chart"
+            width={150}
+            height={80}
+            margin={{ bottom: 0, left: 0, right: 0, top: 0 }}
+            barCategoryGap={5}
           >
-            {summaryData.map((_, index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index]} stroke="none" />
-            ))}
-          </Pie>
-        </PieChart>
-        <div className="summary-info">
-          <Icon name="run" />
-          <p className="display-large">{summaryData[0].value.toFixed(2)}</p>
-          <p className="footnote">{`of ${
-            summaryData[0].value + summaryData[1].value
-          }km`}</p>
+            <Bar
+              dataKey="distanceRun"
+              id="distance-bar"
+              fill="#007aff"
+              minPointSize={1}
+            />
+            <XAxis
+              dataKey="label"
+              height={16}
+              axisLine={false}
+              tickLine={false}
+              tick={{ fill: "#fff", fontFamily: "", fontSize: "10px" }}
+            />
+          </BarChart>
+        </div>
+        <div className="widget-right">
+          <PieChart width={160} height={160}>
+            <Pie
+              data={summaryData}
+              dataKey="value"
+              fill="#007aff"
+              innerRadius={56}
+              outerRadius={60}
+              startAngle={450}
+              endAngle={90}
+            >
+              {summaryData.map((_, index) => (
+                <Cell
+                  key={`cell-${index}`}
+                  fill={COLORS[index]}
+                  stroke="none"
+                />
+              ))}
+            </Pie>
+          </PieChart>
+          <div className="summary-info">
+            <Icon name="run" />
+            <p className="display-large">{summaryData[0].value.toFixed(2)}</p>
+            <p className="footnote">{`of ${
+              summaryData[0].value + summaryData[1].value
+            }km`}</p>
+          </div>
         </div>
       </div>
+      <p className="prototype-label footnote">Strava</p>
     </div>
   );
 }

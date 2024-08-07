@@ -6,9 +6,9 @@
   --spacing-xlarge: 3rem;
   --spacing-xxlarge: 4rem;
 
-  --blue-100: #007aff;
-  --blue-35: #007aff35;
-  --blue-15: #007aff15;
+  --blue-primary-100: #007aff;
+  --blue-primary-35: #007aff59;
+  --blue-primary-15: #007aff26;
 
   --text-primary: white;
   --text-secondary: #7f7f7fcc;
@@ -33,7 +33,25 @@ h1 {
   }
 }
 
+/* Utility Classes */
+
+.button-group {
+  display: flex;
+  gap: var(--spacing-medium);
+}
+
+.prototype-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .prototype-label {
+    padding: 6px;
+  }
+}
+
 /* background image and gradient overlay */
+
 body {
   background-image: url(../public/swirl.png);
   background-repeat: no-repeat;
