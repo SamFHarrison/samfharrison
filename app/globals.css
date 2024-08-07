@@ -8,6 +8,12 @@
   --blue-100: #007aff;
   --blue-35: #007aff35;
   --blue-15: #007aff15;
+
+  --text-primary: white;
+  --text-secondary: #7f7f7fcc;
+  --text-tertiary: #7f7f7f50;
+
+  --material-chrome: #1c1c1ce6;
 }
 
 * {

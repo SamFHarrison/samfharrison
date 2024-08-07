@@ -3,6 +3,13 @@ import Avatar from "../public/avatar.jpg";
 import "./page.css";
 import Button from "./components/Button/Button";
 import { Links } from "./globals";
+// import StravaWidget from "./components/StravaWidget/StravaWidget";
+import dynamic from "next/dynamic";
+
+const StravaWidget = dynamic(
+  () => import("./components/StravaWidget/StravaWidget"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
@@ -38,6 +45,10 @@ export default function Home() {
             </Button>
           </div>
         </div>
+      </section>
+
+      <section className="protoype-container">
+        <StravaWidget />
       </section>
     </main>
   );
