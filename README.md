@@ -25,7 +25,19 @@
 
 ###
 
-<p align="center">I’m Sam, a dedicated Software Engineer currently employed at <a href="https://www.natwestgroup.com/" target="_blank">NatWest Group</a>. With two years of experience in web development, I have honed my skills in various programming languages and frameworks, focusing on delivering high-quality and efficient solutions.<br /><br />I am currently pursuing a Software Engineering apprenticeship with QA Apprenticeships, working towards a SQA Level 8 qualification, equivalent to an HND. My role at NatWest Group has allowed me to work on a range of projects, from developing internal automated email reports using SQL and bash scripting, to creating React-based enquiry forms for our clients.<br /><br />My passion for design extends beyond coding. I am particularly enthusiastic about UI/UX design, with a strong admiration for <a href="https://developer.apple.com/design/" target="_blank">Apple’s design system</a> because of their clean modern aesthetic and the R&D that goes into their Human Computer Interaction resources and guidelines.<br /><br />Outside of my professional life, I play rugby for Moray RFC, compete in snooker tournaments and indulge in my passion for cars.<br /><br />A career goal of mine is to establish a design and development studio collective with a close-knit team of like-minded individuals, where we can innovate, prototype and revolutionise UI engineering together.<br /><br />Feel free to connect with me if you share similar interests or if you're interested in collaborations.</p>
+<p align="center">A software engineer, with 2+ years experience, focusing on User Interfaces.
+<br /><br />
+Passionately crafting intuitive and tactile interfaces, that leverage Human Computer Interaction principles.
+<br /><br />
+Design and engineering disciplines are interdependent.
+<br /><br />
+Always evaluate what you can do so that you don’t actually encounter the problem in which you’re trying to solve.
+<br /><br />
+Standardising solves conflict of opinion.
+<br /><br />
+Teams should pick the pace of their slowest individual - 5 minds beat 4.
+<br /><br />
+An environment where the amount of value added is proportionate to the knowledge received, is problem solving utopia</p>
 
 ###
 
