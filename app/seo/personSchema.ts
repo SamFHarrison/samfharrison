@@ -1,4 +1,4 @@
-const PERSON_SCHEMA = JSON.stringify({
+export const PERSON_SCHEMA = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sam F-Harrison",
