@@ -2,7 +2,7 @@ import Image from "next/image";
 import Avatar from "../public/avatar.jpg";
 import "./page.css";
 import Button from "./components/Button/Button";
-import { Links } from "./globals";
+import { LINKS } from "./constants/globals";
 
 export default function Home() {
   return (
@@ -26,14 +26,14 @@ export default function Home() {
             I design and build applications for the web and mobile.
           </p>
 
-          <Button href={Links.Figma}>Open this site in Figma</Button>
+          <Button href={LINKS.Figma}>Open this site in Figma</Button>
 
           <div className="button-group">
-            <Button variant="secondary" href={Links.LinkedIn}>
+            <Button variant="secondary" href={LINKS.LinkedIn}>
               LinkedIn
             </Button>
 
-            <Button variant="secondary" href={Links.GitHub}>
+            <Button variant="secondary" href={LINKS.GitHub}>
               GitHub
             </Button>
           </div>

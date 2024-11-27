@@ -8,6 +8,7 @@
   --blue-100: #007aff;
   --blue-35: #007aff35;
   --blue-15: #007aff15;
+  --blue-hover: #0065d2;
 
   --text-primary: #f8f8f8;
 }
@@ -39,6 +40,6 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgb(0, 0, 0, 0.8);
+    background: rgb(0, 0, 0, 0.75);
   }
 }

@@ -15,18 +15,24 @@ a {
   border: none;
   cursor: pointer;
 
-  &.primary-button {
-    background-color: var(--blue-100);
-  }
+  transition: all 80ms linear;
+}
 
-  &.secondary-button {
-    background-color: var(--blue-15);
-    color: var(--blue-100);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+.primary-button {
+  background-color: var(--blue-100);
+}
 
-    &:hover {
-      background-color: var(--blue-35);
-    }
-  }
+.primary-button:hover {
+  background-color: var(--blue-hover);
+}
+
+.secondary-button {
+  background-color: var(--blue-15);
+  color: var(--blue-100);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.secondary-button:hover {
+  background-color: var(--blue-35);
 }
