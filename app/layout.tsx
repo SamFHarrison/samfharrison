@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { GeistSans } from "geist/font/sans";
 import Head from "next/head";
 import { KEYWORDS, PERSON_SCHEMA } from "./seo";
 import "./globals.css";
@@ -19,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={GeistSans.className}>
       <Head>
         <script
           type="application/ld+json"
