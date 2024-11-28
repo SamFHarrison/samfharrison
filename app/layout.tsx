@@ -20,9 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <PersonSchema />
-
       <body>
+        <PersonSchema />
+
         {children}
 
         <Analytics />
