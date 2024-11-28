@@ -1,10 +1,9 @@
-import { Analytics } from "@vercel/analytics/next";
-import { GeistSans } from "geist/font/sans";
-import { KEYWORDS, PERSON_SCHEMA } from "./seo";
 import type { Metadata } from "next";
-import "./typography.css";
-import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 import Head from "next/head";
+import { KEYWORDS, PERSON_SCHEMA } from "./seo";
+import "./globals.css";
+import "./typography.css";
 
 export const metadata: Metadata = {
   title: "Sam F-Harrison | Portfolio",
@@ -25,12 +24,12 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(PERSON_SCHEMA),
+            __html: PERSON_SCHEMA,
           }}
         />
       </Head>
 
-      <body className={GeistSans.className}>
+      <body>
         {children}
 
         <Analytics />

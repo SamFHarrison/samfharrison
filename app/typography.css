@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("./assets/fonts/Lexend-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Lexend";
+}
+
 h1 {
   font-size: 3rem;
   font-weight: 700;

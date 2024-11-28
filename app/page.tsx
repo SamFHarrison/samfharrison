@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Avatar from "../public/avatar.jpg";
-import "./page.css";
 import Button from "./components/Button/Button";
 import { LINKS } from "./constants/globals";
+import "./page.css";
 
 export default function Home() {
   return (
