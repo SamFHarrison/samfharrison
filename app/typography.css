@@ -3,9 +3,9 @@
   src: url("./assets/fonts/Lexend-VariableFont_wght.ttf");
 }
 
-body {
+/* body {
   font-family: "Lexend";
-}
+} */
 
 h1 {
   font-size: 3rem;
