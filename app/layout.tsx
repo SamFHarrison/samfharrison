@@ -13,7 +13,6 @@ export const generateMetadata = (): Metadata => {
       "Portfolio of Sam F-Harrison, a passionate software engineer specialising in web and mobile app development. Explore innovative projects, clean code practices, and future-focused solutions.",
     creator: "Sam F-Harrison",
     keywords: KEYWORDS,
-    // other: { "application/ld+json": JSON.stringify(PERSON_SCHEMA) },
   };
 };
 
@@ -25,6 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body>
+        {children}
+
         <Script
           id="person-schema"
           type="application/ld+json"
@@ -32,8 +33,6 @@ export default function RootLayout({
             __html: JSON.stringify(PERSON_SCHEMA),
           }}
         />
-
-        {children}
 
         <Analytics />
       </body>
