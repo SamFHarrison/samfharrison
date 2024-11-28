@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { GeistSans } from "geist/font/sans";
-import Head from "next/head";
-import { KEYWORDS, PERSON_SCHEMA } from "./seo";
+import { KEYWORDS, PersonSchema } from "./seo";
 import "./globals.css";
 import "./typography.css";
 
@@ -21,14 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <Head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: PERSON_SCHEMA,
-          }}
-        />
-      </Head>
+      <PersonSchema />
 
       <body>
         {children}
