@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GeistSans } from "geist/font/sans";
 import Script from "next/script";
 import { KEYWORDS, PERSON_SCHEMA } from "./seo";
@@ -35,6 +36,8 @@ export default function RootLayout({
         />
 
         <Analytics />
+
+        <SpeedInsights />
       </body>
     </html>
   );
