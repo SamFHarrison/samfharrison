@@ -1,16 +1,14 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Avatar from "../public/avatar.jpg";
-import "./page.css";
 import Button from "./components/Button/Button";
-import { Links } from "./globals";
-// import StravaWidget from "./components/StravaWidget/StravaWidget";
-import dynamic from "next/dynamic";
+import { LINKS } from "./constants/globals";
+import "./page.css";
 
 const StravaWidget = dynamic(
   () => import("./components/StravaWidget/StravaWidget"),
   { ssr: false }
 );
-
 export default function Home() {
   return (
     <main>
@@ -33,14 +31,14 @@ export default function Home() {
             I design and build applications for the web and mobile.
           </p>
 
-          <Button href={Links.Figma}>Open this site in Figma</Button>
+          <Button href={LINKS.Figma}>Open this site in Figma</Button>
 
           <div className="button-group">
-            <Button variant="secondary" href={Links.LinkedIn}>
+            <Button variant="secondary" href={LINKS.LinkedIn}>
               LinkedIn
             </Button>
 
-            <Button variant="secondary" href={Links.GitHub}>
+            <Button variant="secondary" href={LINKS.GitHub}>
               GitHub
             </Button>
           </div>

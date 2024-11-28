@@ -6,9 +6,10 @@
   --spacing-xlarge: 3rem;
   --spacing-xxlarge: 4rem;
 
-  --blue-primary-100: #007aff;
-  --blue-primary-35: #007aff59;
-  --blue-primary-15: #007aff26;
+  --blue-100: #007aff;
+  --blue-35: #007aff59;
+  --blue-15: #007aff26;
+  --blue-hover: #0065d2;
 
   --text-primary: white;
   --text-secondary: #7f7f7fcc;
@@ -25,12 +26,6 @@
 
 h1 {
   margin-bottom: var(--spacing-medium);
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 /* Utility Classes */
@@ -52,7 +47,13 @@ h1 {
 
 /* background image and gradient overlay */
 
+p {
+  margin-bottom: var(--spacing-small);
+}
+
 body {
+  color: var(--text-primary);
+
   background-image: url(../public/swirl.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,25 +66,6 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 25%,
-      rgba(0, 0, 0, 0) 90%
-    );
-    background: -webkit-linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 25%,
-      rgba(0, 0, 0, 0) 90%
-    );
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 25%,
-      rgba(0, 0, 0, 0) 90%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+    background: rgb(0, 0, 0, 0.75);
   }
 }
