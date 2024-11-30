@@ -25,6 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body>
+        <div className="background-overlay" />
+
         {children}
 
         <Script
