@@ -2,8 +2,9 @@
 
 ## Features
 
-- [ ] `/blog`
-- [ ] `/photography`
+- [ ] Blog area - `/blog | /articles | /writing` ?
+- [ ] `/photography` page
+- [ ] Background parallax effect using device gyroscope ?
 
 ## Major Changes
 

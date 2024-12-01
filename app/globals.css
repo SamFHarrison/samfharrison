@@ -23,10 +23,9 @@
   --text-primary: #f8f8f8;
   --text-secondary: #c2c2c280;
 
-  --material-dark-chrome: #1c1c1c50;
+  --material-dark-chrome: #181818;
 
   /* Effects */
-  --border: 1px solid #c2c2c210;
   --drop-shadow: 0 1px 2px #00000040;
   --blur: 6px;
 }
@@ -79,6 +78,7 @@ body {
       rgba(0, 0, 0, 0.6) 15%,
       rgba(0, 0, 0, 0) 100%
     );
+    backdrop-filter: blur(var(--blur));
   }
 }
 

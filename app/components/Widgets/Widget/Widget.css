@@ -5,9 +5,7 @@
   gap: var(--spacing-medium);
   height: 150px;
   border-radius: 20px;
-  border: var(--border);
   filter: drop-shadow(var(--drop-shadow));
-  backdrop-filter: blur(var(--blur));
   background: var(--material-dark-chrome);
 }
 
