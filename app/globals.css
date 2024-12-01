@@ -1,24 +1,50 @@
 :root {
+  /* Spacing */
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
   --spacing-xlarge: 3rem;
   --spacing-xxlarge: 4rem;
 
+  /* Sizes */
+  --page-content-width-large: 514px;
+  --page-content-width-small: 348px;
+  --page-content-height: 546px;
+  --page-content-gap: var(--spacing-medium);
+  --widget-height: 150px;
+  --widget-width-small: 150px;
+  --widget-width-large: 316px;
+  --app-icon-container: 150px;
+  --app-icon: 57px;
+
+  /* Colors */
   --text-primary: #f8f8f8;
   --text-secondary: #c2c2c280;
 
   --material-dark-chrome: #1c1c1c50;
+
+  /* Effects */
+  --border: 1px solid #c2c2c210;
+  --drop-shadow: 0 0 4px #00000060;
+  --blur: 6px;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow: hidden;
 }
 
 body {
   color: var(--text-primary);
+
+  height: 100dvh;
+  width: 100dvw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   background-image: url(../public/swirl.png);
   background-repeat: no-repeat;
@@ -28,29 +54,37 @@ body {
   div.background-overlay {
     z-index: -1;
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(
       90deg,
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.9) 20%,
-      rgba(0, 0, 0, 0.7) 35%,
+      rgba(0, 0, 0, 0.6) 15%,
       rgba(0, 0, 0, 0) 100%
     );
     background: -webkit-linear-gradient(
       90deg,
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.9) 20%,
-      rgba(0, 0, 0, 0.7) 35%,
+      rgba(0, 0, 0, 0.6) 15%,
       rgba(0, 0, 0, 0) 100%
     );
     background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 0.9) 20%,
-      rgba(0, 0, 0, 0.7) 35%,
+      rgba(0, 0, 0, 0.6) 15%,
       rgba(0, 0, 0, 0) 100%
     );
   }
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:focus {
+  outline: none;
 }

@@ -2,19 +2,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  width: 316px;
+  gap: var(--spacing-medium);
+  min-width: var(--widget-width-large);
   height: 150px;
   border-radius: 20px;
   background: var(--material-dark-chrome);
-  border: 1px solid #c2c2c210;
-  filter: drop-shadow(0px 0px 30px #00000060);
-  backdrop-filter: blur(6px);
+  border: var(--border);
+  filter: drop-shadow(var(--drop-shadow));
+  backdrop-filter: blur(var(--blur));
 }
 
 .hero-widget-avatar {
-  height: 85px;
-  width: 85px;
+  --avatar-size: 85px;
+
+  height: var(--avatar-size);
+  width: var(--avatar-size);
 }
 
 .hero-widget-text-wrapper {

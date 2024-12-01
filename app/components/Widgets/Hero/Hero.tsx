@@ -14,7 +14,7 @@ export default function Hero() {
       <div className="hero-widget-text-wrapper">
         <h1>Hi, I&apos;m Sam</h1>
 
-        <p className="hero-widget-tagline">Building apps for web and mobile</p>
+        <p className="hero-widget-tagline">I build apps for web and mobile</p>
       </div>
     </section>
   );

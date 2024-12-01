@@ -1,8 +1,41 @@
 main {
-  min-height: 100dvh;
-  display: grid;
+  width: var(--page-content-width-large);
+  height: var(--page-content-height);
+  max-height: 100vh;
+
+  padding: var(--spacing-large) var(--spacing-medium);
+
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--page-content-gap);
+}
+
+@media (max-width: 600px) {
+  main {
+    width: var(--page-content-width-small);
+  }
+}
+
+.app-icon-container {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
   align-items: center;
+  height: var(--app-icon-container);
+  width: var(--app-icon-container);
+  gap: var(--page-content-gap);
+}
+
+.app-icon-button {
+  height: var(--app-icon);
+  width: var(--app-icon);
+}
+
+.app-icon {
+  filter: drop-shadow(var(--drop-shadow));
 }
 
 /* TODO: reduced motion */
