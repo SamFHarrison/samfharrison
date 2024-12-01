@@ -1,6 +1,6 @@
 import "./Widget.css";
 
-type WidgetProps = {
+export type WidgetProps = {
   size: "small" | "medium";
   className?: string;
   children?: React.ReactNode;
@@ -8,7 +8,7 @@ type WidgetProps = {
 
 const Widget: React.FC<WidgetProps> = ({ className, size, children }) => {
   return (
-    <section className={`widget widget-${size} ${className}`}>
+    <section className={`widget widget-${size} ${className}`} role="region">
       {children}
     </section>
   );
