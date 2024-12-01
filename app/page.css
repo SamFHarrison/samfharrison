@@ -29,15 +29,6 @@ main {
   gap: var(--page-content-gap);
 }
 
-.app-icon-button {
-  height: var(--app-icon);
-  width: var(--app-icon);
-}
-
-.app-icon {
-  filter: drop-shadow(var(--drop-shadow));
-}
-
 /* TODO: reduced motion */
 /* @media (prefers-reduced-motion) {} */
 

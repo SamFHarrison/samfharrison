@@ -5,6 +5,7 @@ import {
   InstagramAppIcon,
   LinkedInAppIcon,
 } from "./assets/appIcons";
+import AppIcon from "./components/AppIcon/AppIcon";
 import Hero from "./components/Widgets/Hero/Hero";
 import { LINKS } from "./constants/globals";
 import "./page.css";
@@ -15,33 +16,21 @@ export default function Home() {
       <Hero />
 
       <section className="app-icon-container">
-        <a className="app-icon-button" target="_blank" href={LINKS.Figma}>
-          <Image className="app-icon" src={FigmaAppIcon} alt="Figma app icon" />
-        </a>
+        <AppIcon name="figma" appIcon={FigmaAppIcon} url={LINKS.Figma} />
 
-        <a className="app-icon-button" target="_blank" href={LINKS.Instagram}>
-          <Image
-            className="app-icon"
-            src={InstagramAppIcon}
-            alt="Instagram app icon"
-          />
-        </a>
+        <AppIcon
+          name="instagram"
+          appIcon={InstagramAppIcon}
+          url={LINKS.Instagram}
+        />
 
-        <a className="app-icon-button" target="_blank" href={LINKS.GitHub}>
-          <Image
-            className="app-icon"
-            src={GitHubAppIcon}
-            alt="GitHub app icon"
-          />
-        </a>
+        <AppIcon name="github" appIcon={GitHubAppIcon} url={LINKS.GitHub} />
 
-        <a className="app-icon-button" target="_blank" href={LINKS.LinkedIn}>
-          <Image
-            className="app-icon"
-            src={LinkedInAppIcon}
-            alt="LinkedIn app icon"
-          />
-        </a>
+        <AppIcon
+          name="linkedin"
+          appIcon={LinkedInAppIcon}
+          url={LINKS.LinkedIn}
+        />
       </section>
     </main>
   );

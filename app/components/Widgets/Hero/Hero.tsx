@@ -3,12 +3,12 @@ import Avatar from "../../../assets/avatar.png";
 import Widget from "../Widget/Widget";
 import "./Hero.css";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <Widget size="medium">
       <Image
         src={Avatar}
-        alt="Digital avatar of Sam, he has blonde hair, glasses and a friendly expression, styled in a cartoonish emoji-like appearance."
+        alt="Digital avatar of Sam, he has blonde hair, glasses and a friendly expression, styled in a cartoonish emoji-like appearance"
         className="hero-widget-avatar"
       />
 
@@ -19,4 +19,6 @@ export default function Hero() {
       </div>
     </Widget>
   );
-}
+};
+
+export default Hero;

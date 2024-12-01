@@ -27,7 +27,7 @@
 
   /* Effects */
   --border: 1px solid #c2c2c210;
-  --drop-shadow: 0 0 4px #00000060;
+  --drop-shadow: 0 1px 2px #00000040;
   --blur: 6px;
 }
 
