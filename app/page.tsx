@@ -1,43 +1,35 @@
-import Image from "next/image";
-import Avatar from "../public/avatar.jpg";
-import Button from "./components/Button/Button";
+import {
+  FigmaAppIcon,
+  GitHubAppIcon,
+  InstagramAppIcon,
+  LinkedInAppIcon,
+} from "./assets/appIcons";
+import AppIcon from "./components/AppIcon/AppIcon";
+import Hero from "./components/Widgets/Hero/Hero";
 import { LINKS } from "./constants/globals";
 import "./page.css";
 
 export default function Home() {
   return (
     <main>
-      <div className="background-overlay" />
+      <Hero />
 
-      <section className="hero">
-        <Image
-          src={Avatar}
-          alt="Sam's digital avatar with blue eyes, blonde hair and glasses"
-          width={200}
-          height={200}
-          placeholder="blur"
-          className="avatar"
+      <section className="app-icon-container">
+        <AppIcon name="figma" appIcon={FigmaAppIcon} url={LINKS.Figma} />
+
+        <AppIcon
+          name="instagram"
+          appIcon={InstagramAppIcon}
+          url={LINKS.Instagram}
         />
 
-        <div className="hero-info">
-          <h1>Hi, I&apos;m Sam.</h1>
+        <AppIcon name="github" appIcon={GitHubAppIcon} url={LINKS.GitHub} />
 
-          <p className="headline">
-            I design and build applications for the web and mobile.
-          </p>
-
-          <Button href={LINKS.Figma}>Open this site in Figma</Button>
-
-          <div className="button-group">
-            <Button variant="secondary" href={LINKS.LinkedIn}>
-              LinkedIn
-            </Button>
-
-            <Button variant="secondary" href={LINKS.GitHub}>
-              GitHub
-            </Button>
-          </div>
-        </div>
+        <AppIcon
+          name="linkedin"
+          appIcon={LinkedInAppIcon}
+          url={LINKS.LinkedIn}
+        />
       </section>
     </main>
   );

@@ -1,39 +1,36 @@
 main {
-  min-height: 100dvh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  width: var(--page-content-width-large);
+  height: var(--page-content-height);
+  max-height: 100vh;
 
-  section.hero {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--spacing-xxlarge);
+  padding: var(--spacing-large) var(--spacing-medium);
 
-    .avatar {
-      border-radius: 999px;
-    }
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: var(--page-content-gap);
+}
 
-    .hero-info {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: var(--spacing-medium);
-      margin-bottom: var(--spacing-xlarge);
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+  }
 
-      p {
-        text-align: center;
-      }
-    }
+  main {
+    width: var(--page-content-width-small);
   }
 }
 
-/* * Utility Classes */
-
-.button-group {
+.app-icon-container {
   display: flex;
-  gap: var(--spacing-medium);
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: var(--app-icon-container);
+  width: var(--app-icon-container);
+  gap: var(--page-content-gap);
 }
 
 /* TODO: reduced motion */

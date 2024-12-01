@@ -1,0 +1,18 @@
+.widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-medium);
+  height: 150px;
+  border-radius: 20px;
+  filter: drop-shadow(var(--drop-shadow));
+  background: var(--material-dark-chrome);
+}
+
+.widget-small {
+  min-width: var(--widget-width-small);
+}
+
+.widget-medium {
+  min-width: var(--widget-width-medium);
+}

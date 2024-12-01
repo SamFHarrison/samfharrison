@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@vercel/analytics": "^1.4.1",
@@ -18,11 +20,17 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/coverage-v8": "^2.1.6",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
-    "typescript": "^5"
+    "jsdom": "^25.0.1",
+    "typescript": "^5",
+    "vitest": "^2.1.5"
   }
 }

@@ -1,0 +1,8 @@
+.app-icon-anchor {
+  height: var(--app-icon);
+  width: var(--app-icon);
+}
+
+.app-icon {
+  filter: drop-shadow(var(--drop-shadow));
+}
