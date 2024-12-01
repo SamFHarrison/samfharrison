@@ -8,4 +8,5 @@ export const KEYWORDS = [
   "react projects",
   "software side project ideas",
   "react components",
+  "advent of code solutions",
 ];

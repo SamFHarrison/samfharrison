@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { GeistSans } from "geist/font/sans";
+// import { GeistSans } from "geist/font/sans";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import { KEYWORDS, PERSON_SCHEMA } from "./seo";
 import "./globals.css";
 import "./typography.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-inter",
+});
 
 export const generateMetadata = (): Metadata => {
   return {
@@ -23,11 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={GeistSans.className}>
+    <html lang="en" className={`${inter.variable}`}>
       <body>
         <div className="background-overlay" />
 
-        {children}
+        <main>{children}</main>
 
         <Script
           id="person-schema"

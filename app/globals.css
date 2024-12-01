@@ -5,26 +5,16 @@
   --spacing-xlarge: 3rem;
   --spacing-xxlarge: 4rem;
 
-  --blue-100: #007aff;
-  --blue-35: #007aff35;
-  --blue-15: #007aff15;
-  --blue-hover: #0065d2;
-
   --text-primary: #f8f8f8;
+  --text-secondary: #c2c2c280;
+
+  --material-dark-chrome: #1c1c1c50;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-h1 {
-  margin-bottom: var(--spacing-medium);
-}
-
-p {
-  margin-bottom: var(--spacing-small);
 }
 
 body {
@@ -63,4 +53,11 @@ body {
       rgba(0, 0, 0, 0) 100%
     );
   }
+}
+
+main {
+  min-height: 100dvh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }

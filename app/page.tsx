@@ -1,22 +1,21 @@
 import Image from "next/image";
-import Avatar from "../public/avatar.jpg";
-import Button from "./components/Button/Button";
-import { LINKS } from "./constants/globals";
+import Avatar from "../public/avatar.png";
 import "./page.css";
 
 export default function Home() {
   return (
-    <main>
-      {/* <Image
-          src={Avatar}
-          alt="Sam's digital avatar with blue eyes, blonde hair and glasses"
-          width={200}
-          height={200}
-          placeholder="blur"
-          className="avatar"
-        /> */}
+    <section className="widget-large">
+      <Image
+        src={Avatar}
+        alt="Digital avatar of Sam, he has blonde hair, glasses and a friendly expression, styled in a cartoonish emoji-like appearance."
+        className="hero-widget-avatar"
+      />
 
-      <section className="hero-info"></section>
-    </main>
+      <div className="hero-widget-text-wrapper">
+        <h1>Hi, I&apos;m Sam</h1>
+
+        <p className="hero-widget-tagline">Building apps for web and mobile</p>
+      </div>
+    </section>
   );
 }
