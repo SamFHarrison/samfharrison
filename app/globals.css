@@ -11,9 +11,11 @@
   --page-content-width-small: 348px;
   --page-content-height: 546px;
   --page-content-gap: var(--spacing-medium);
+
   --widget-height: 150px;
   --widget-width-small: 150px;
-  --widget-width-large: 316px;
+  --widget-width-medium: 316px;
+
   --app-icon-container: 150px;
   --app-icon: 57px;
 

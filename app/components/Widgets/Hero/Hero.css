@@ -1,17 +1,3 @@
-.widget-large {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-medium);
-  min-width: var(--widget-width-large);
-  height: 150px;
-  border-radius: 20px;
-  background: var(--material-dark-chrome);
-  border: var(--border);
-  filter: drop-shadow(var(--drop-shadow));
-  backdrop-filter: blur(var(--blur));
-}
-
 .hero-widget-avatar {
   --avatar-size: 85px;
 
