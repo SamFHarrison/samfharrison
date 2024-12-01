@@ -13,6 +13,10 @@ main {
 }
 
 @media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+  }
+
   main {
     width: var(--page-content-width-small);
   }
