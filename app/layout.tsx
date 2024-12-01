@@ -34,7 +34,7 @@ export default function RootLayout({
       <body>
         <div className="background-overlay" />
 
-        <main>{children}</main>
+        {children}
 
         <Script
           id="person-schema"

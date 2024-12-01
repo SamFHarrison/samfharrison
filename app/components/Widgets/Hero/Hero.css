@@ -1,0 +1,29 @@
+.widget-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 316px;
+  height: 150px;
+  border-radius: 20px;
+  background: var(--material-dark-chrome);
+  border: 1px solid #c2c2c210;
+  filter: drop-shadow(0px 0px 30px #00000060);
+  backdrop-filter: blur(6px);
+}
+
+.hero-widget-avatar {
+  height: 85px;
+  width: 85px;
+}
+
+.hero-widget-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-widget-tagline {
+  width: 153px;
+  color: var(--text-secondary);
+}
