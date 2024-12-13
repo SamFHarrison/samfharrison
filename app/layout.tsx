@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Image from "next/image";
 import Script from "next/script";
+import homeScreenBackground from "./assets/background.png";
 import { KEYWORDS, PERSON_SCHEMA } from "./seo";
 import "./globals.css";
 import "./typography.css";
@@ -37,7 +39,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
       <body>
-        <div className="background-overlay" />
+        <Image
+          alt="Home screen background"
+          src={homeScreenBackground}
+          placeholder="blur"
+          quality={100}
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
 
         {children}
 

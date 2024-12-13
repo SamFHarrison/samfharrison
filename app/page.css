@@ -1,5 +1,7 @@
 main {
   width: var(--page-content-width-large);
+  min-width: var(--page-content-width-large);
+
   height: var(--page-content-height);
   max-height: 100vh;
 
@@ -19,6 +21,7 @@ main {
 
   main {
     width: var(--page-content-width-small);
+    min-width: var(--page-content-width-small);
   }
 }
 
