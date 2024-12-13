@@ -11,8 +11,10 @@
 
 .widget-small {
   min-width: var(--widget-width-small);
+  max-width: var(--widget-width-small);
 }
 
 .widget-medium {
   min-width: var(--widget-width-medium);
+  max-width: var(--widget-width-medium);
 }

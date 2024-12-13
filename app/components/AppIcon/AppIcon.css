@@ -1,6 +1,12 @@
 .app-icon-anchor {
   height: var(--app-icon);
   width: var(--app-icon);
+
+  transition: var(--transition-transform-slow);
+}
+
+.app-icon-anchor:hover {
+  transform: scale(1.06);
 }
 
 .app-icon {

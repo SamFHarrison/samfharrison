@@ -5,6 +5,7 @@ import {
   LinkedInAppIcon,
 } from "./assets/appIcons";
 import AppIcon from "./components/AppIcon/AppIcon";
+import AoC from "./components/Widgets/AoC/AoC";
 import Hero from "./components/Widgets/Hero/Hero";
 import { LINKS } from "./constants/globals";
 import "./page.css";
@@ -23,7 +24,11 @@ export default function Home() {
           url={LINKS.Instagram}
         />
 
-        <AppIcon name="github" appIcon={GitHubAppIcon} url={LINKS.GitHub} />
+        <AppIcon
+          name="github"
+          appIcon={GitHubAppIcon}
+          url={LINKS.GitHub.Profile}
+        />
 
         <AppIcon
           name="linkedin"
@@ -31,6 +36,8 @@ export default function Home() {
           url={LINKS.LinkedIn}
         />
       </section>
+
+      <AoC />
     </main>
   );
 }
