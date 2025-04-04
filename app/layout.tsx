@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import { RootLayoutContainer } from "./components/RootLayoutContainer/RootLayoutContainer";
 import { KEYWORDS, PERSON_SCHEMA } from "./seo";
 import "./globals.css";
 import "./typography.css";
@@ -37,9 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
       <body>
-        <div className="background-overlay" />
-
-        {children}
+        <RootLayoutContainer>{children}</RootLayoutContainer>
 
         <Script
           id="person-schema"

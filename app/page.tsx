@@ -1,43 +1,20 @@
-import {
-  FigmaAppIcon,
-  GitHubAppIcon,
-  InstagramAppIcon,
-  LinkedInAppIcon,
-} from "./assets/appIcons";
-import AppIcon from "./components/AppIcon/AppIcon";
-import AoC from "./components/Widgets/AoC/AoC";
-import Hero from "./components/Widgets/Hero/Hero";
-import { LINKS } from "./constants/globals";
+import Image from "next/image";
+import Avatar from "./assets/avatar.png";
 import "./page.css";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Image
+        src={Avatar}
+        alt="Digital avatar of Sam, he has blonde hair, glasses and a friendly expression, styled in a cartoonish emoji-like appearance"
+        className="hero-widget-avatar"
+        width={100}
+        height={100}
+        priority
+      />
 
-      <section className="app-icon-container">
-        <AppIcon name="figma" appIcon={FigmaAppIcon} url={LINKS.Figma} />
-
-        <AppIcon
-          name="instagram"
-          appIcon={InstagramAppIcon}
-          url={LINKS.Instagram}
-        />
-
-        <AppIcon
-          name="github"
-          appIcon={GitHubAppIcon}
-          url={LINKS.GitHub.Profile}
-        />
-
-        <AppIcon
-          name="linkedin"
-          appIcon={LinkedInAppIcon}
-          url={LINKS.LinkedIn}
-        />
-      </section>
-
-      <AoC />
+      <h1>Hi, I&apos;m Sam</h1>
     </main>
   );
 }
