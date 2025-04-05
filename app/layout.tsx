@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Image from "next/image";
 import Script from "next/script";
 import { RootLayoutContainer } from "./components/RootLayoutContainer/RootLayoutContainer";
 import { BIO, KEYWORDS, PERSON_SCHEMA } from "./seo";
