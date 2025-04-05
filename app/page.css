@@ -47,10 +47,9 @@ main {
   .tag-line {
     color: var(--text-secondary);
   }
+}
 
-  .link-wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: var(--spacing-medium);
-  }
+.link-wrapper {
+  display: flex;
+  gap: var(--spacing-medium);
 }
