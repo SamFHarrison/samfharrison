@@ -33,11 +33,3 @@ a.link:hover {
     fill: var(--color-link-hover);
   }
 }
-
-a.link:visited {
-  color: var(--color-link-visited);
-}
-/* For reasons I don't understand, I can't nest this like the block above */
-a.link:visited > svg {
-  fill: var(--color-link-visited);
-}
