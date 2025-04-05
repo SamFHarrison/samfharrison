@@ -6,7 +6,7 @@ import "./page.css";
 
 export default function Home() {
   return (
-    <main>
+    <main role="main">
       <div className="hero-container">
         <Image
           src={Avatar}

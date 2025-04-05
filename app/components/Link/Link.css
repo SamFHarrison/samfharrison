@@ -20,6 +20,13 @@ a.link {
   }
 }
 
+a.link:focus,
+a.link:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-link);
+  border-radius: 4px;
+}
+
 a.link:hover {
   color: var(--color-link-hover);
   svg {
