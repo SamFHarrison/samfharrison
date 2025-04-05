@@ -1,9 +1,6 @@
 body {
   background-color: black;
   color: var(--text-primary);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 main {
@@ -14,16 +11,22 @@ main {
   align-items: center;
 }
 
-/* .app-icon-container {
+.hero-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  height: var(--app-icon-container);
-  width: var(--app-icon-container);
-  gap: var(--page-content-gap);
-} */
+  flex-direction: column;
+  width: max-content;
+  height: max-content;
+  margin-bottom: 5rem;
+
+  h1 {
+    margin-top: 1rem;
+  }
+
+  p {
+    margin-top: var(--spacing-small);
+    color: var(--text-secondary);
+  }
+}
 
 /* TODO: reduced motion */
 /* @media (prefers-reduced-motion) {} */
