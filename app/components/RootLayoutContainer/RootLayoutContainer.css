@@ -45,3 +45,10 @@
 .horizontal-container:after {
   bottom: 50px;
 }
+
+@media (max-width: 768px) {
+  .vertical-container:before,
+  .vertical-container:after {
+    display: none;
+  }
+}

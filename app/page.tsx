@@ -17,11 +17,19 @@ export default function Home() {
           priority
         />
 
-        <h1>Sam F-Harrison</h1>
+        <div className="title-wrapper">
+          <h1>Sam F-Harrison</h1>
+          <p>— Design Engineer</p>
+        </div>
 
-        <p>Designing and building applications for the web and mobile</p>
+        <p className="tag-line">
+          Designing and building applications for the web and mobile
+        </p>
 
-        <Link label="GitHub" href={LINKS.GitHub.Profile} />
+        <div className="link-wrapper">
+          <Link label="GitHub" href={LINKS.GitHub.Profile} />
+          <Link label="LinkedIn" href={LINKS.LinkedIn} />
+        </div>
       </div>
     </main>
   );

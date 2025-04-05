@@ -6,7 +6,9 @@
   --spacing-xxlarge: 4rem;
 
   --text-primary: #ebebeb;
-  --text-secondary: #c2c2c280;
+  --text-secondary: #9a9a9a;
+  --text-tertiary: #c2c2c250;
+
   --material-dark-chrome: #232323;
 }
 
@@ -21,11 +23,11 @@ a {
   cursor: pointer;
 }
 
-h1 {
+h1,
+a {
   margin-top: var(--spacing-medium);
 }
 
-p,
-a {
+p {
   margin-top: var(--spacing-small);
 }

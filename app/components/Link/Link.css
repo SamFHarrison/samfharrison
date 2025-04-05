@@ -1,17 +1,11 @@
 :root {
   --color-link: #1784f9;
   --color-link-hover: #155ead;
-  --color-link-visited: #084e90;
+  --color-link-visited: #155ead;
 }
 
 a.link {
   color: var(--color-link);
-  &:hover {
-    color: var(--color-link-hover);
-  }
-  /* &:visited {
-    color: var(--color-link-visited);
-  } */
 
   width: max-content;
   display: flex;
@@ -22,5 +16,21 @@ a.link {
   svg {
     margin-top: auto;
     margin-bottom: 2px;
+    fill: var(--color-link);
   }
+}
+
+a.link:hover {
+  color: var(--color-link-hover);
+  svg {
+    fill: var(--color-link-hover);
+  }
+}
+
+a.link:visited {
+  color: var(--color-link-visited);
+}
+/* For reasons I don't understand, I can't nest this like the block above */
+a.link:visited > svg {
+  fill: var(--color-link-visited);
 }
