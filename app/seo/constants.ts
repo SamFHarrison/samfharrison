@@ -12,4 +12,4 @@ export const KEYWORDS = [
 ];
 
 export const BIO =
-  "A Scottish based Design Engineer with a passion for building applications for the web and mobile.";
+  "UK based Design Engineer with a passion for building applications for the web and mobile.";
