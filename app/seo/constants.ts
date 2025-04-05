@@ -10,3 +10,6 @@ export const KEYWORDS = [
   "react components",
   "advent of code solutions",
 ];
+
+export const BIO =
+  "UK based Design Engineer with a passion for building applications for the web and mobile.";

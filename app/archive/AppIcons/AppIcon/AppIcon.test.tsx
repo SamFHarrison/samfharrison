@@ -1,13 +1,13 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
+import { LINKS } from "../../../constants/globals";
 import {
   FigmaAppIcon,
   GitHubAppIcon,
   InstagramAppIcon,
   LinkedInAppIcon,
-} from "../../assets/appIcons";
-import { LINKS } from "../../constants/globals";
+} from "../appIcons";
 import AppIcon, { AppIconProps } from "./AppIcon";
 
 const defaultProps: AppIconProps = {
@@ -69,7 +69,7 @@ describe("<AppIcon />", () => {
       figma: LINKS.Figma,
       instagram: LINKS.Instagram,
       linkedin: LINKS.LinkedIn,
-      github: LINKS.GitHub,
+      github: LINKS.GitHub.Profile,
     };
     const appIcons = {
       figma: FigmaAppIcon,

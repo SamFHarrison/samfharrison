@@ -1,2 +1,2 @@
-export { KEYWORDS } from "./keywords";
-export { default as PERSON_SCHEMA } from "./PersonSchema.json";
+export { KEYWORDS, BIO } from "./constants";
+export { PERSON_SCHEMA } from "./PersonSchema";
