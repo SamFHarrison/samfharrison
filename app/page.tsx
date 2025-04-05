@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Avatar from "./assets/avatar.png";
+import { Link } from "./components/Link/Link";
+import { LINKS } from "./constants/globals";
 import "./page.css";
 
 export default function Home() {
@@ -14,8 +16,12 @@ export default function Home() {
           height={75}
           priority
         />
+
         <h1>Sam F-Harrison</h1>
+
         <p>Designing and building applications for the web and mobile</p>
+
+        <Link label="GitHub" href={LINKS.GitHub.Profile} />
       </div>
     </main>
   );

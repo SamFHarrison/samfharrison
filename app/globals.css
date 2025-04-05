@@ -5,10 +5,8 @@
   --spacing-xlarge: 3rem;
   --spacing-xxlarge: 4rem;
 
-  /* Colors */
   --text-primary: #ebebeb;
   --text-secondary: #c2c2c280;
-
   --material-dark-chrome: #232323;
 }
 
@@ -20,10 +18,14 @@
 }
 
 a {
-  all: unset;
   cursor: pointer;
+}
 
-  &:focus {
-    outline: none;
-  }
+h1 {
+  margin-top: var(--spacing-medium);
+}
+
+p,
+a {
+  margin-top: var(--spacing-small);
 }
