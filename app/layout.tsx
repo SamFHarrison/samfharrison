@@ -4,13 +4,12 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
 import { RootLayoutContainer } from "./components/RootLayoutContainer/RootLayoutContainer";
-import { KEYWORDS, PERSON_SCHEMA } from "./seo";
+import { BIO, KEYWORDS, PERSON_SCHEMA } from "./seo";
 import "./globals.css";
 import "./typography.css";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "700"],
   variable: "--font-inter",
 });
 
@@ -22,9 +21,8 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const generateMetadata = (): Metadata => {
   return {
-    title: "Sam F-Harrison | Portfolio",
-    description:
-      "Portfolio of Sam F-Harrison, a passionate software engineer specialising in web and mobile app development. Explore innovative projects, clean code practices, and future-focused solutions.",
+    title: "Sam F-Harrison | Design Engineer",
+    description: BIO,
     creator: "Sam F-Harrison",
     keywords: KEYWORDS,
   };

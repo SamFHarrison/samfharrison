@@ -1,34 +1,15 @@
 :root {
-  /* Spacing */
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
   --spacing-xlarge: 3rem;
   --spacing-xxlarge: 4rem;
 
-  /* Sizes */
-  --page-content-width-large: 514px;
-  --page-content-width-small: 348px;
-  --page-content-height: 546px;
-  --page-content-gap: var(--spacing-medium);
-
-  --widget-height: 150px;
-  --widget-width-small: 150px;
-  --widget-width-medium: 316px;
-
-  --app-icon-container: 150px;
-  --app-icon: 57px;
-
   /* Colors */
-  --text-primary: #f8f8f8;
+  --text-primary: #ebebeb;
   --text-secondary: #c2c2c280;
 
   --material-dark-chrome: #232323;
-
-  /* Effects */
-  --drop-shadow: 0 1px 2px #00000040;
-  --blur: 6px;
-  --transition-transform-slow: transform cubic-bezier(0.34, 1.56, 0.64, 1) 500ms;
 }
 
 * {
@@ -41,8 +22,8 @@
 a {
   all: unset;
   cursor: pointer;
-}
 
-a:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }
