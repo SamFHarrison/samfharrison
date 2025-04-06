@@ -14,8 +14,8 @@
 .vertical-container:before {
   content: "";
   position: absolute;
-  background-color: var(--material-dark-chrome);
-  width: 1px;
+  background-color: #ffffff30;
+  width: 0.5px;
   top: 0;
   bottom: 0;
 }
@@ -32,8 +32,8 @@
 .horizontal-container:before {
   content: "";
   position: absolute;
-  background-color: var(--material-dark-chrome);
-  height: 1px;
+  background-color: #ffffff30;
+  height: 0.5px;
   right: 0;
   left: 0;
 }
