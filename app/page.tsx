@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         <p className="tag-line">
-          Designing and building applications for the web and mobile
+          Designing and building applications for the web and mobile.
         </p>
 
         <div className="link-wrapper">
