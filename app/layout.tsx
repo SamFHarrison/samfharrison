@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import Image from "next/image";
 import Script from "next/script";
+import { ReactQueryClientProvider } from "./components/ReactQueryClientProvider/ReactQueryClientProvider";
 import { RootLayoutContainer } from "./components/RootLayoutContainer/RootLayoutContainer";
 import { BIO, KEYWORDS, PERSON_SCHEMA } from "./seo";
 import "./globals.css";
@@ -37,7 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
       <body>
-        <RootLayoutContainer>{children}</RootLayoutContainer>
+        <ReactQueryClientProvider>
+          <RootLayoutContainer>
+            <main role="main">{children}</main>
+          </RootLayoutContainer>
+        </ReactQueryClientProvider>
 
         <Script
           id="person-schema"
