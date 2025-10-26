@@ -1,14 +1,13 @@
-### TO-DO
+# TO-DO
 
 ## Features
 
-- [ ] Blog area - `/blog | /articles | /writing` ?
-- [ ] `/photography` page
-- [ ] Background parallax effect using device gyroscope ?
+- [ ] `/writing` with at least 1 article
+- [ ] `/photography` page ?
 
 ## Major Changes
 
-- [ ] Change background image to use `<Image />` element from `next/image` to allow priority rendering
+- ~~[ ] Change background image to use `<Image />` element from `next/image` to allow priority rendering~~ _(Removing background image completely in v1.0.0)_
 
 ## Minor Changes
 
