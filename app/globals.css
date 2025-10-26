@@ -1,32 +1,5 @@
-:root {
-  --spacing-small: 0.5rem;
-  --spacing-medium: 1rem;
-  --spacing-large: 2rem;
-  --spacing-xlarge: 3rem;
-  --spacing-xxlarge: 4rem;
-
-  --text-primary: #ebebeb;
-  --text-secondary: #b4b4b4;
-  --text-tertiary: #757575;
-
-  --material-dark-chrome: #2a2a2a;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  cursor: pointer;
-}
-
-h1,
-a {
-  margin-top: var(--spacing-medium);
-}
-
-p {
-  margin-top: var(--spacing-small);
+body {
+  background-color: #19191d;
+  color: #f3f3f3;
+  font-family: var(--font-geist);
 }
