@@ -1,19 +1,15 @@
-# TO-DO
+# TODO.md
 
-## Features
+## Task list
 
-- [ ] `/writing` with at least 1 article
-- [ ] `/photography` page ?
+List of features to be built in order of priority:
 
-## Major Changes
+1. [ ] Create home `/` page [(see wireframe)](https://www.figma.com/design/yvqEr8D9NDUkNZAboKocYO/My-Brain-In-The-Form-Of-A-Figma-File?node-id=1474-56&t=2fLdNhvF43nCwiV8-4)
+2. [ ] "Writing" section on home page with at least 1 article
+3. [ ] Make `articleList` dynamic
+4. [ ] `/photography` page?
 
-- ~~[ ] Change background image to use `<Image />` element from `next/image` to allow priority rendering~~ _(Removing background image completely in v1.0.0)_
-
-## Minor Changes
-
-- [ ]
-
-## SEO
+## SEO Checklist
 
 - [ ] Add sitemap
 - [ ] Check OG and Twitter Card images
