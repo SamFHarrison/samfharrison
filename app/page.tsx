@@ -15,7 +15,7 @@ export default function Home() {
         </p>
 
         <section>
-          <h2>/Writing</h2>
+          <h2>Writing</h2>
           <p>
             I think I'll use this as a digital scrapbook - including TIL's,
             note-to-self's and maybe even the odd opinion or two.
