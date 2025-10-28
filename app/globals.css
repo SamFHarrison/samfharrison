@@ -1,5 +1,53 @@
 body {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+
   background-color: #19191d;
   color: #f3f3f3;
-  font-family: var(--font-geist);
+  font-feature-settings: "ss02", "ss03", "ss08", "ss09";
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  margin: 0;
+  padding: 2rem 0 0.5rem;
+
+  /* Optically aligning the first letter */
+  text-indent: -0.18rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 1.5rem 0 1rem;
+}
+
+p {
+  line-height: 150%;
+  letter-spacing: 0.2px;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+p.secondary-text {
+  font-family: var(--font-geist-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.2px;
+  opacity: 0.5;
+  padding: 0 0 0.25rem;
+}
+
+hr {
+  height: 1px;
+  background-color: #f3f3f350;
+  border: none;
+  border-radius: 999px;
+  margin: 0.5rem 0;
 }
