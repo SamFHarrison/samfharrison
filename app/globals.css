@@ -8,6 +8,10 @@ body {
   font-feature-settings: "ss02", "ss03", "ss08", "ss09";
 }
 
+main {
+  padding: 0.5rem 0 1rem;
+}
+
 h1 {
   font-size: 3rem;
   line-height: 100%;
@@ -16,8 +20,8 @@ h1 {
   margin: 0;
   padding: 2rem 0 0.5rem;
 
-  /* Optically aligning the first letter */
-  text-indent: -0.18rem;
+  /* Optically aligning the leading edge of the letters */
+  transform: translateX(-2.8px);
 }
 
 h2 {
