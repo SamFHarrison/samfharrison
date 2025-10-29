@@ -1,3 +1,5 @@
+import Footer from './components/Footer';
+
 export default function Home() {
   return (
     <>
@@ -20,13 +22,12 @@ export default function Home() {
             I think I'll use this as a digital scrapbook - including TIL's,
             note-to-self's and maybe even the odd opinion or two.
           </p>
-          <p className="secondary-text">coming soon...</p>
+          <p className="secondary-text">
+            I'm still writing my first article...
+          </p>
         </section>
       </main>
-      <footer>
-        <hr />
-        <div aria-label="Social links"></div>
-      </footer>
+      <Footer />
     </>
   );
 }
