@@ -1,4 +1,4 @@
-import { articleList } from './articles';
+import { articleList } from "./articles";
 
 export default async function Page({
   params,
