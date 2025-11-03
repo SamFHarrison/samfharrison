@@ -1,5 +1,7 @@
 :root {
   --sfh-bg: #19191d;
+  --sfh-bg-code: #282c34;
+
   --sfh-font-primary: #f3f3f3;
   --sfh-font-secondary: #f3f3f350;
 
@@ -91,4 +93,10 @@ hr {
   border: none;
   border-radius: 999px;
   margin: 0.5rem 0;
+}
+
+code.inline-code {
+  background-color: var(--sfh-bg-code);
+  padding: 0.3rem 0.4rem 0.25rem;
+  border-radius: 0.25rem;
 }

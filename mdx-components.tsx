@@ -24,6 +24,10 @@ const components: MDXComponents = {
 
     return <CodeBlock code={raw} lang={lang as any} {...props} />;
   },
+
+  code: ({ children }) => {
+    return <code className="inline-code">{children}</code>;
+  },
 };
 
 export function useMDXComponents(): MDXComponents {
