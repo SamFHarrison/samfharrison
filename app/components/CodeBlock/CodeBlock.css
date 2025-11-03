@@ -8,7 +8,9 @@ div:has(code) {
   box-sizing: border-box !important;
   transform: translateX(-1rem);
 
-  code {
-    width: 100% !important;
+  @media (max-width: 800px) {
+    width: calc(100dvw - 1rem) !important;
+    max-width: calc(var(--sfh-main-width) + 1rem);
+    transform: translateX(-0.5rem);
   }
 }
