@@ -1,15 +1,23 @@
+:root {
+  --sfh-bg: #19191d;
+  --sfh-font-primary: #f3f3f3;
+  --sfh-font-secondary: #f3f3f350;
+}
+
 body {
   max-width: 600px;
   margin: 2rem auto 0;
   padding: 0 1rem;
 
-  background-color: #19191d;
-  color: #f3f3f3;
+  background-color: var(--sfh-bg);
+  color: var(--sfh-font-primary);
+
   font-feature-settings: "ss02", "ss03", "ss08", "ss09";
+  -webkit-font-smoothing: antialiased;
 }
 
 main {
-  padding: 0.5rem 0 1rem;
+  padding: 0 0 1rem;
 }
 
 h1 {
@@ -30,7 +38,7 @@ h2 {
   font-weight: 400;
   letter-spacing: 0.4px;
   margin: 0;
-  padding: 1.5rem 0 1rem;
+  padding: 1.5rem 0 0.5rem;
 }
 
 p {
@@ -45,12 +53,39 @@ p.secondary-text {
   font-size: 0.875rem;
   letter-spacing: 0.2px;
   opacity: 0.5;
-  padding: 0 0 0.25rem;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 2%;
+  text-underline-offset: 15%;
+  text-decoration-color: var(--sfh-font-secondary);
+  transition: all 150ms ease-out;
+
+  &:hover {
+    text-decoration-color: var(--sfh-font-primary);
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+li::before {
+  content: ">";
+  margin-right: 0.5rem;
+  color: var(--sfh-font-secondary);
 }
 
 hr {
   height: 1px;
-  background-color: #f3f3f350;
+  background-color: var(--sfh-font-secondary);
   border: none;
   border-radius: 999px;
   margin: 0.5rem 0;
