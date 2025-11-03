@@ -7,7 +7,7 @@ type ArticleList = Article[];
 
 export const articleList: ArticleList = [
   {
-    title: "How I Git Good",
-    slug: "how-i-git-good",
+    title: "How I Git",
+    slug: "how-i-git",
   },
 ];

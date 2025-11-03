@@ -2,10 +2,12 @@
   --sfh-bg: #19191d;
   --sfh-font-primary: #f3f3f3;
   --sfh-font-secondary: #f3f3f350;
+
+  --sfh-main-width: 600px;
 }
 
 body {
-  max-width: 600px;
+  max-width: var(--sfh-main-width);
   margin: 2rem auto 0;
   padding: 0 1rem;
 

@@ -1,0 +1,14 @@
+div:has(code) {
+  /** the !important's are for overwriting the library's inline styles */
+  padding: 0.75rem 1rem !important;
+  font-size: 0.9rem !important;
+  font-family: var(--font-geist-mono) !important;
+  border-radius: 1rem !important;
+  width: calc(var(--sfh-main-width) + 2rem) !important;
+  box-sizing: border-box !important;
+  transform: translateX(-1rem);
+
+  code {
+    width: 100% !important;
+  }
+}
