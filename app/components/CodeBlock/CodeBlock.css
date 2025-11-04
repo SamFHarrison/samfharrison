@@ -1,8 +1,7 @@
-div:has(code) {
+div:has(code.code-block) {
   /** the !important's are for overwriting the library's inline styles */
   padding: 0.75rem 1rem !important;
-  font-size: 0.9rem !important;
-  font-family: var(--font-geist-mono) !important;
+  line-height: 120% !important;
   border-radius: 1rem !important;
   width: calc(var(--sfh-main-width) + 2rem) !important;
   box-sizing: border-box !important;

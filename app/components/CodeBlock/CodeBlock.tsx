@@ -12,7 +12,12 @@ export default function CodeBlock({
   lang: string;
 }) {
   return (
-    <SyntaxHighlighter language={lang} style={oneDark} PreTag="div">
+    <SyntaxHighlighter
+      language={lang}
+      style={oneDark}
+      PreTag="div"
+      codeTagProps={{ className: "code-block" }}
+    >
       {code}
     </SyntaxHighlighter>
   );
