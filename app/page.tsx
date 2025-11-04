@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Footer } from "./components";
+import { ROUTES } from "./routes";
 import { articleList } from "./writing/[slug]/articles";
 
 export default function Home() {
@@ -33,7 +34,9 @@ export default function Home() {
             {articleList.map((article) => {
               return (
                 <li key={article.slug}>
-                  <Link href={`/writing/${article.slug}`}>{article.title}</Link>
+                  <Link href={`${ROUTES.Writing}/${article.slug}`}>
+                    {article.title}
+                  </Link>
                 </li>
               );
             })}

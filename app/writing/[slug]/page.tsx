@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { ROUTES } from "../../routes";
 import { articleList } from "./articles";
 
 export default async function Page({
@@ -10,6 +12,7 @@ export default async function Page({
 
   return (
     <main>
+      <Link href={ROUTES.Home}>Back</Link>
       <Article />
     </main>
   );
