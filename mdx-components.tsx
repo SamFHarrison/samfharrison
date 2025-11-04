@@ -22,11 +22,20 @@ const components: MDXComponents = {
 
     const lang = (preProps?.className || "").replace("language-", "") || "ts";
 
-    return <CodeBlock code={raw} lang={lang as any} {...props} />;
+    return <CodeBlock code={raw} lang={lang as string} {...props} />;
   },
 
   code: ({ children }) => {
     return <code className="inline-code">{children}</code>;
+  },
+
+  li: ({ children }) => {
+    // TODO: Extract this into a ListItem component
+    return (
+      <li>
+        <div>{children}</div>
+      </li>
+    );
   },
 };
 

@@ -4,6 +4,7 @@
 
   --sfh-font-primary: #f3f3f3;
   --sfh-font-secondary: #f3f3f350;
+  --sfh-font-code: #abb2bf;
 
   --sfh-main-width: 600px;
 }
@@ -16,7 +17,7 @@ body {
   background-color: var(--sfh-bg);
   color: var(--sfh-font-primary);
 
-  font-feature-settings: "ss02", "ss03", "ss08", "ss09";
+  font-feature-settings: "ss03", "ss09";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -45,10 +46,14 @@ h2 {
   padding: 1.5rem 0 0.5rem;
 }
 
-p {
+p,
+li {
   line-height: 150%;
   letter-spacing: 0.2px;
   margin: 0;
+}
+
+p {
   padding: 0.5rem 0;
 }
 
@@ -81,9 +86,14 @@ ul {
   margin: 0;
 }
 
+li {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  column-gap: 0.175rem;
+}
+
 li::before {
   content: ">";
-  margin-right: 0.5rem;
   color: var(--sfh-font-secondary);
 }
 
@@ -95,8 +105,15 @@ hr {
   margin: 0.5rem 0;
 }
 
+code {
+  font-family: var(--font-geist-mono) !important;
+  font-size: 0.8125rem !important;
+  line-height: 100% !important;
+}
+
 code.inline-code {
   background-color: var(--sfh-bg-code);
-  padding: 0.3rem 0.4rem 0.25rem;
+  color: var(--sfh-font-code);
+  padding: 0.2rem 0.3rem;
   border-radius: 0.25rem;
 }
