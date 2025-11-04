@@ -8,7 +8,11 @@ export default async function Page({
   const { slug } = await params;
   const { default: Article } = await import(`../articles/${slug}.mdx`);
 
-  return <Article />;
+  return (
+    <main>
+      <Article />
+    </main>
+  );
 }
 
 export function generateStaticParams() {

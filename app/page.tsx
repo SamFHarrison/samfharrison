@@ -7,14 +7,13 @@ export default function Home() {
 
   return (
     <>
-      <header>
-        {/* <p className="secondary-text">samfharrison.com</p> */}
+      {/* <p className="secondary-text">samfharrison.com</p> */}
 
-        <h1>Sam F-Harrison</h1>
+      <h1>Sam F-Harrison</h1>
 
-        <p className="secondary-text">Software Engineer, UI</p>
-        <hr />
-      </header>
+      <p className="secondary-text">Software Engineer, UI</p>
+
+      <hr />
 
       <main>
         <p>
@@ -41,8 +40,6 @@ export default function Home() {
           </ul>
         </section>
       </main>
-
-      <Footer />
     </>
   );
 }
