@@ -1,5 +1,6 @@
 export const KEYWORDS = [
   "Sam F-Harrison",
+  "sam f harrison",
   "software engineer portfolio",
   "web developer",
   "user interface design",
@@ -12,4 +13,4 @@ export const KEYWORDS = [
 ];
 
 export const BIO =
-  "UK based Design Engineer with a passion for building applications for the web and mobile.";
+  "UK based software engineer building applications for web and mobile.";

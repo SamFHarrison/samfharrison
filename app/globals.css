@@ -1,32 +1,119 @@
 :root {
-  --spacing-small: 0.5rem;
-  --spacing-medium: 1rem;
-  --spacing-large: 2rem;
-  --spacing-xlarge: 3rem;
-  --spacing-xxlarge: 4rem;
+  --sfh-bg: #19191d;
+  --sfh-bg-code: #282c34;
 
-  --text-primary: #ebebeb;
-  --text-secondary: #b4b4b4;
-  --text-tertiary: #757575;
+  --sfh-font-primary: #f3f3f3;
+  --sfh-font-secondary: #f3f3f350;
+  --sfh-font-code: #abb2bf;
 
-  --material-dark-chrome: #2a2a2a;
+  --sfh-main-width: 600px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
+body {
+  max-width: var(--sfh-main-width);
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+
+  background-color: var(--sfh-bg);
+  color: var(--sfh-font-primary);
+
+  font-feature-settings: "ss03", "ss09";
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  padding: 0 0 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  margin: 0;
+  padding: 2rem 0 0.5rem;
+
+  /* Optically aligning the leading edge of the letters */
+  transform: translateX(-2.8px);
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 100%;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  margin: 0;
+  padding: 1.5rem 0 0.5rem;
+}
+
+p,
+li {
+  line-height: 150%;
+  letter-spacing: 0.2px;
   margin: 0;
 }
 
-a {
-  cursor: pointer;
-}
-
-h1,
-a {
-  margin-top: var(--spacing-medium);
-}
-
 p {
-  margin-top: var(--spacing-small);
+  padding: 0.5rem 0;
+}
+
+p.secondary-text {
+  font-family: var(--font-geist-mono);
+  font-size: 0.875rem;
+  letter-spacing: 0.2px;
+  opacity: 0.5;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 2%;
+  text-underline-offset: 15%;
+  text-decoration-color: var(--sfh-font-secondary);
+  transition: all 150ms ease-out;
+
+  &:hover {
+    text-decoration-color: var(--sfh-font-primary);
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1rem auto;
+  column-gap: 0.175rem;
+}
+
+li::before {
+  content: ">";
+  color: var(--sfh-font-secondary);
+}
+
+hr {
+  height: 1px;
+  background-color: var(--sfh-font-secondary);
+  border: none;
+  border-radius: 999px;
+  margin: 0.5rem 0;
+}
+
+code {
+  font-family: var(--font-geist-mono) !important;
+  font-size: 0.8125rem !important;
+  line-height: 100% !important;
+}
+
+code.inline-code {
+  background-color: var(--sfh-bg-code);
+  color: var(--sfh-font-code);
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.25rem;
 }

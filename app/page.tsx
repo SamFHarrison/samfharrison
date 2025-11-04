@@ -1,36 +1,48 @@
-import Image from "next/image";
-import Avatar from "./assets/avatar.png";
-import { Link } from "./components/Link/Link";
-import { LINKS } from "./constants/globals";
-import "./page.css";
+import Link from "next/link";
+import { Footer } from "./components";
+import { ROUTES } from "./routes";
+import { articleList } from "./writing/[slug]/articles";
 
 export default function Home() {
+  const articleTitles = articleList.map((article) => article.title);
+
   return (
-    <main role="main">
-      <div className="hero-container">
-        <Image
-          src={Avatar}
-          alt="Digital avatar of Sam, he has blonde hair, glasses and a friendly expression, styled in a cartoonish emoji-like appearance"
-          className="hero-widget-avatar"
-          width={75}
-          height={75}
-          priority
-        />
+    <>
+      {/* <p className="secondary-text">samfharrison.com</p> */}
 
-        <div className="title-wrapper">
-          <h1>Sam F-Harrison</h1>
-          <p>— Design Engineer</p>
-        </div>
+      <h1>Sam F-Harrison</h1>
 
-        <p className="tag-line">
-          Designing and building applications for the web and mobile.
+      <p className="secondary-text">Software Engineer, UI</p>
+
+      <hr />
+
+      <main>
+        <p>
+          This is the corner of the web where I keep some code, some thoughts
+          and some memories I want to keep.
         </p>
 
-        <div className="link-wrapper">
-          <Link label="GitHub" href={LINKS.GitHub.Profile} />
-          <Link label="LinkedIn" href={LINKS.LinkedIn} />
-        </div>
-      </div>
-    </main>
+        <section>
+          <h2>Writing</h2>
+
+          <p>
+            I think I'll use this as a digital scrapbook - including TIL's,
+            note-to-self's and maybe even the odd opinion or two.
+          </p>
+
+          <ul>
+            {articleList.map((article) => {
+              return (
+                <li key={article.slug}>
+                  <Link href={`${ROUTES.Writing}/${article.slug}`}>
+                    {article.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      </main>
+    </>
   );
 }

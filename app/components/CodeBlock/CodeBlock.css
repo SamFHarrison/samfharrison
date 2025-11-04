@@ -1,0 +1,15 @@
+div:has(code.code-block) {
+  /** the !important's are for overwriting the library's inline styles */
+  padding: 0.75rem 1rem !important;
+  line-height: 120% !important;
+  border-radius: 1rem !important;
+  width: calc(var(--sfh-main-width) + 2rem) !important;
+  box-sizing: border-box !important;
+  transform: translateX(-1rem);
+
+  @media (max-width: 800px) {
+    width: calc(100dvw - 1rem) !important;
+    max-width: calc(var(--sfh-main-width) + 1rem);
+    transform: translateX(-0.5rem);
+  }
+}

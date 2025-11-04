@@ -1,0 +1,21 @@
+# How I Git
+
+<SecondaryText>3 November, 2025</SecondaryText>
+
+---
+
+_This is basically so I don't forget things._
+
+## Pruning branches
+
+I use `git branch` a lot, to check branch names before switching to them, and I really hate it when the list is clogged up with 20+ old branches. So I regularly run this:
+
+```txt
+git fetch --prune | git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
+```
+
+- `git fetch --prune` - This does everything `git fetch` does + updates your local branch's remote tracking information.
+- `git branch -vv` - First, we list all local branches and their tracking information. The `-vv` flag provides verbose output; it shows the branch name, its latest commit and the remote branch it tracks.
+- `grep ': gone]'` - This `grep` grabs all the branches that no longer has a remote branch.
+- `awk '{print $1}'` - `awk` processes the text so we can extract parts of it. The we grab the first column of each line which corresponds to the branch name.
+- `xargs git branch -d` - Now we pass the branch names to git to delete. If you want to delete branches that aren't fully merged (e.g. local branches that were never pushed) then swap `-d` for `-D`.
