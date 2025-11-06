@@ -37,6 +37,14 @@ const components: MDXComponents = {
       </li>
     );
   },
+
+  a: ({ children, ...props }) => {
+    return (
+      <a target="_blank" {...props}>
+        {children}
+      </a>
+    );
+  },
 };
 
 export function useMDXComponents(): MDXComponents {
