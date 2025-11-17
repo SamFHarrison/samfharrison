@@ -1,10 +1,10 @@
-import Image from "next/image";
-import GitHubLogo from "../../assets/GitHubLogo.svg";
-import InstagramLogo from "../../assets/InstagramLogo.svg";
-import LinkedInLogo from "../../assets/LinkedInLogo.svg";
-import X from "../../assets/X.svg";
-import { LINKS } from "../../links";
-import "./Footer.css";
+import Image from 'next/image';
+import { LINKS } from '../../../links';
+import GitHubLogo from '../../assets/GitHubLogo.svg';
+import InstagramLogo from '../../assets/InstagramLogo.svg';
+import LinkedInLogo from '../../assets/LinkedInLogo.svg';
+import X from '../../assets/X.svg';
+import './Footer.css';
 
 export default function Footer() {
   return (

@@ -1,5 +1,5 @@
 import type { MDXComponents } from "mdx/types";
-import CodeBlock from "./app/components/CodeBlock/CodeBlock";
+import { CodeBlock } from './app/lib/components';
 
 const components: MDXComponents = {
   SecondaryText({ children, props }) {
