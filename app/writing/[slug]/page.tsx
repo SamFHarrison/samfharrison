@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { ROUTES } from "../../routes";
-import { articleList } from "./articles";
+import Link from 'next/link';
+import { ROUTES } from '../../routes';
+import { articleList } from './articles';
 
 export default async function Page({
   params,
