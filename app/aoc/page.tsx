@@ -10,7 +10,7 @@ export default function AdventOfCode() {
       <ol>
         <li>
           <Link href={ROUTES.AoC.Home + ROUTES.AoC.SecretEntrance}>
-            Secret Entrance
+            Day 1: Secret Entrance
           </Link>
         </li>
       </ol>
