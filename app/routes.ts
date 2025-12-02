@@ -4,5 +4,6 @@ export const ROUTES = {
   AoC: {
     Home: "/aoc",
     SecretEntrance: "/secret-entrance",
+    GiftShop: "/gift-shop",
   },
 };
