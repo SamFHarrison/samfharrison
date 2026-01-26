@@ -15,8 +15,8 @@ export default function GiftShop() {
 
       <hr />
 
-      <p>Step 1: {part1}</p>
-      <p>Step 2: {part2}</p>
+      <p>Part 1: {part1}</p>
+      <p>Part 2: {part2}</p>
     </>
   );
 }

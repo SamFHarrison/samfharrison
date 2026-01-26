@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { ROUTES } from '../../routes';
-import { input } from './input';
-import dayOne from './solution';
+import Link from "next/link";
+import { ROUTES } from "../../routes";
+import { input } from "./input";
+import dayOne from "./solution";
 
 export default function SecretEntrance() {
   const answer = dayOne(input);
@@ -14,8 +14,8 @@ export default function SecretEntrance() {
 
       <hr />
 
-      <p>Step 1: {answer.step1}</p>
-      <p>Step 2: {answer.step2}</p>
+      <p>Part 1: {answer.step1}</p>
+      <p>Part 2: {answer.step2}</p>
     </>
   );
 }

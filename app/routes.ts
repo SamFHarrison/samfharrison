@@ -5,5 +5,6 @@ export const ROUTES = {
     Home: "/aoc",
     SecretEntrance: "/secret-entrance",
     GiftShop: "/gift-shop",
+    Lobby: "/lobby",
   },
 };

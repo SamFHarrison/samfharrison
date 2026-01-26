@@ -19,6 +19,10 @@ export default function AdventOfCode() {
             Day 2: Gift Shop
           </Link>
         </li>
+
+        <li>
+          <Link href={ROUTES.AoC.Home + ROUTES.AoC.Lobby}>Day 3: Lobby</Link>
+        </li>
       </ol>
     </>
   );
