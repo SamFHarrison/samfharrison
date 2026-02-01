@@ -18,4 +18,8 @@ export const articleList: ArticleList = [
     title: "'Feel like shit' Checklist",
     slug: "feel-like-shit-checklist",
   },
+  {
+    title: "Gym Diary",
+    slug: "gym-diary",
+  },
 ];
