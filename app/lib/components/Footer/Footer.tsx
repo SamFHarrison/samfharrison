@@ -3,7 +3,6 @@ import { LINKS } from '../../../links';
 import GitHubLogo from '../../assets/GitHubLogo.svg';
 import InstagramLogo from '../../assets/InstagramLogo.svg';
 import LinkedInLogo from '../../assets/LinkedInLogo.svg';
-import X from '../../assets/X.svg';
 import './Footer.css';
 
 export default function Footer() {
@@ -37,9 +36,6 @@ export default function Footer() {
             height={24}
             unoptimized
           />
-        </a>
-        <a target="_blank" href={LINKS.X}>
-          <Image src={X} alt="X logo" width={24} height={24} unoptimized />
         </a>
       </div>
     </footer>
