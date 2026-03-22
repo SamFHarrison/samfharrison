@@ -19,7 +19,7 @@ export const articleList: ArticleList = [
     slug: "feel-like-shit-checklist",
   },
   {
-    title: "I Wish More People Would Knowck On My Door",
+    title: "I Wish More People Would Knock On My Door",
     slug: "i-wish-more-people-would-knock-on-my-door",
   },
 ];
