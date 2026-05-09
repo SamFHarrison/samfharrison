@@ -22,4 +22,8 @@ export const articleList: ArticleList = [
     title: "I Wish More People Would Knock On My Door",
     slug: "i-wish-more-people-would-knock-on-my-door",
   },
+  {
+    title: "Anecdotes",
+    slug: "anecdotes",
+  },
 ];
