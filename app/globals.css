@@ -10,8 +10,9 @@
 }
 
 body {
+  height: 100dvh;
   max-width: var(--sfh-main-width);
-  margin: 2rem auto 0;
+  margin: 0;
   padding: 0 1rem;
 
   background-color: var(--sfh-bg);

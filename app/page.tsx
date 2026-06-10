@@ -1,6 +1,7 @@
-import Link from 'next/link';
-import { ROUTES } from './routes';
-import { articleList } from './writing/[slug]/articles';
+import Link from "next/link";
+import { ROUTES } from "./routes";
+import { articleList } from "./(content)/writing/[slug]/articles";
+import { Footer } from "./lib/components";
 
 export default function Home() {
   const articleTitles = articleList.map((article) => article.title);
@@ -42,6 +43,8 @@ export default function Home() {
           </ul>
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
