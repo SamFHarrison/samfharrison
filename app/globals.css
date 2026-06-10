@@ -1,5 +1,6 @@
 :root {
   --sfh-bg: #19191d;
+  --sfh-bg-diagram: #1c1f25;
   --sfh-bg-code: #282c34;
 
   --sfh-font-primary: #f3f3f3;
@@ -23,6 +24,7 @@ body {
 
 main {
   padding: 0 0 1rem;
+  position: relative;
 }
 
 h1 {
@@ -124,4 +126,30 @@ code.inline-code {
   color: var(--sfh-font-code);
   padding: 0.2rem 0.3rem;
   border-radius: 0.25rem;
+}
+
+.article-image {
+  display: block;
+  width: calc(100%);
+  max-width: none;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.diagram {
+  --sfh-size-mac-screenshot-extra-width: 1rem;
+
+  background-color: var(--sfh-bg-diagram);
+  width: calc(100% - var(--sfh-size-mac-screenshot-extra-width));
+  margin-inline: calc(var(--sfh-size-mac-screenshot-extra-width) / 2 * -1);
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.mac-screenshot {
+  --sfh-size-mac-screenshot-extra-width: 4rem;
+
+  width: calc(100% + var(--sfh-size-mac-screenshot-extra-width));
+  margin-inline: calc(var(--sfh-size-mac-screenshot-extra-width) / 2 * -1);
 }

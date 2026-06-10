@@ -1,0 +1,43 @@
+import Image from "next/image";
+
+# NatWest ChatGPT App
+
+<SecondaryText>9th May, 2026</SecondaryText>
+
+---
+
+I recently built [the first ChatGPT app by a UK bank](https://www.natwestgroup.com/news-and-insights/news-room/press-releases/ai-and-data/2026/apr/natwest-becomes-first-uk-bank-to-launch-trusted-home-buying-advi.html).
+
+Honestly, this is a huge milestone for me. Since starting in this industry 3.5 years ago, I've worked, pretty much exclusively, on internal apps and developer tools. My goal all along has been to build for the public - to create something that when I tell my friends and family about, I can actually show/send them.
+
+But anyway, let's shelve the gratitude for a second and get technical.
+
+## The Idea
+
+[NatWest entered a partnership with OpenAI](https://www.natwestgroup.com/news-and-insights/news-room/press-releases/ai-and-data/2025/mar/natwest-open-ai-collaborate-to-accelerate-cutting-edge-ai-transf.html) in 2025. Part of the partnership was to create an app within ChatGPT that allowed users to begin a mortgage journey using an LLM.
+
+## Architecture
+
+From a very high-level, the system looks like this...
+
+<Image
+  src="/images/natwest_mortgages_app_system_context_diagram.png"
+  alt="NatWest Mortgages ChatGPT app system context"
+  loading="eager"
+  width={1650}
+  height={476}
+  className="article-image diagram"
+/>
+
+Myself and [Oliver Farrell](https://www.linkedin.com/in/oliverfarrell/) built the MCP server. The Affordability and Product API already existed. The affordability API actually powers our [How Much Can I Borrow](https://www.natwest.com/mortgages/mortgage-calculators/how-much-can-i-borrow.html) web page.
+
+It's all about that reusability.
+
+<Image
+  src="/images/chat_screenshot_affordability_tool.png"
+  alt="NatWest Mortgages ChatGPT app system context"
+  loading="eager"
+  width={3104}
+  height={1964}
+  className="article-image mac-screenshot"
+/>

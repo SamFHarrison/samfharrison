@@ -26,4 +26,8 @@ export const articleList: ArticleList = [
     title: "Anecdotes",
     slug: "anecdotes",
   },
+  {
+    title: "NatWest ChatGPT App",
+    slug: "natwest-chatgpt-app",
+  },
 ];
