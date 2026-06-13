@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { articleList } from "./articles";
-import { ROUTES } from "../../../routes";
+import { ROUTES } from "../../lib/contants";
 
 export default async function Page({
   params,
@@ -12,7 +12,9 @@ export default async function Page({
 
   return (
     <main>
-      <Link href={ROUTES.Home}>Back</Link>
+      <Link href={ROUTES.Home} className="back-button">
+        Back
+      </Link>
       <Article />
     </main>
   );

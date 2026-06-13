@@ -4,3 +4,14 @@ export const LINKS = {
   Instagram: "https://www.instagram.com/sam.fharrison/",
   X: "https://x.com/SamFHarrison",
 };
+
+export const ROUTES = {
+  Home: "/",
+  Writing: "/writing",
+  AoC: {
+    Home: "/aoc",
+    SecretEntrance: "/secret-entrance",
+    GiftShop: "/gift-shop",
+    Lobby: "/lobby",
+  },
+};

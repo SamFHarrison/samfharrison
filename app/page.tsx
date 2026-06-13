@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ROUTES } from "./routes";
-import { articleList } from "./(content)/writing/[slug]/articles";
+import { articleList } from "./writing/[slug]/articles";
 import { Footer } from "./lib/components";
+import { ROUTES } from "./lib/contants";
 
 export default function Home() {
   const articleTitles = articleList.map((article) => article.title);

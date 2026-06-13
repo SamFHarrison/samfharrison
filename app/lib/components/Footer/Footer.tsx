@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { LINKS } from '../../../links';
-import GitHubLogo from '../../assets/GitHubLogo.svg';
-import InstagramLogo from '../../assets/InstagramLogo.svg';
-import LinkedInLogo from '../../assets/LinkedInLogo.svg';
-import './Footer.css';
+import Image from "next/image";
+import GitHubLogo from "../../assets/GitHubLogo.svg";
+import InstagramLogo from "../../assets/InstagramLogo.svg";
+import LinkedInLogo from "../../assets/LinkedInLogo.svg";
+import { LINKS } from "../../contants";
+import "./Footer.css";
 
 export default function Footer() {
   return (
