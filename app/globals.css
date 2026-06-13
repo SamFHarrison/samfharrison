@@ -65,7 +65,7 @@ p {
   padding: 0.5rem 0;
 }
 
-p.secondary-text {
+.secondary-text {
   font-family: var(--font-geist-mono);
   font-size: 0.875rem;
   letter-spacing: 0.2px;
@@ -76,7 +76,7 @@ p.secondary-text {
 a {
   color: inherit;
   text-decoration-thickness: 2%;
-  text-underline-offset: 15%;
+  text-underline-offset: 18%;
   text-decoration-color: var(--sfh-font-secondary);
   transition: all 150ms ease-out;
 

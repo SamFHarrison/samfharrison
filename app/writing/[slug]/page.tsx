@@ -12,9 +12,6 @@ export default async function Page({
 
   return (
     <main>
-      <Link href={ROUTES.Home} className="back-button">
-        Back
-      </Link>
       <Article />
     </main>
   );

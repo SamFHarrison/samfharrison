@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ROUTES } from "../../routes";
 import { input } from "./input";
 import dayTwo from "./solution";
+import { ROUTES } from "../../lib/contants";
 
 export default function GiftShop() {
   const part1 = dayTwo(input, 1);

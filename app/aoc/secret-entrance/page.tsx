@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { ROUTES } from "../../routes";
 import { input } from "./input";
 import dayOne from "./solution";
+import { ROUTES } from "../../lib/contants";
 
 export default function SecretEntrance() {
   const answer = dayOne(input);

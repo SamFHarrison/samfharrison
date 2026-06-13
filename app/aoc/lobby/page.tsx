@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ROUTES } from "../../routes";
 import { input } from "./input";
+import { ROUTES } from "../../lib/contants";
 
 export default function GiftShop() {
   const batteryBanks = input.split("\n");

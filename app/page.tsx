@@ -1,15 +1,13 @@
 import Link from "next/link";
 import { articleList } from "./writing/[slug]/articles";
 import { Footer } from "./lib/components";
-import { ROUTES } from "./lib/contants";
+import { LINKS, ROUTES } from "./lib/contants";
 
 export default function Home() {
   const articleTitles = articleList.map((article) => article.title);
 
   return (
     <>
-      {/* <p className="secondary-text">samfharrison.com</p> */}
-
       <h1>Sam F-Harrison</h1>
 
       <p className="secondary-text">Software Engineer, UI</p>
@@ -17,18 +15,22 @@ export default function Home() {
       <hr />
 
       <main>
-        <p>
-          This is the corner of the web where I keep some code, some thoughts
-          and some memories I want to keep.
-        </p>
+        <p>Welcome to my corner of the web. 👋🏼</p>
+
+        <section>
+          <h2>Projects</h2>
+
+          <ul>
+            <li>
+              <Link href={LINKS.NatWestChatGPTApp}>
+                NatWest Mortgages ChatGPT App
+              </Link>
+            </li>
+          </ul>
+        </section>
 
         <section>
           <h2>Writing</h2>
-
-          <p>
-            I think I'll use this as a digital scrapbook - including TIL's,
-            note-to-self's and maybe even the odd opinion or two.
-          </p>
 
           <ul>
             {articleList.map((article) => {
