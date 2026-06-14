@@ -10,10 +10,10 @@
 }
 
 body {
-  height: 100dvh;
+  height: calc(100dvh - 1rem);
   max-width: var(--sfh-main-width);
-  margin: 1rem auto;
-  padding: 0 1rem;
+  margin: 0 auto;
+  padding: 1rem 1rem 0;
 
   background-color: var(--sfh-bg);
   color: var(--sfh-font-primary);
@@ -74,9 +74,11 @@ p {
 }
 
 a {
+  height: 1.5rem;
   color: inherit;
+  width: fit-content;
   text-decoration-thickness: 2%;
-  text-underline-offset: 18%;
+  text-underline-offset: 20%;
   text-decoration-color: var(--sfh-font-secondary);
   transition: all 150ms ease-out;
 

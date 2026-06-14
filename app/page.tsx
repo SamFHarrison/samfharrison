@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { articleList } from "./writing/[slug]/articles";
-import { Footer } from "./lib/components";
 import { LINKS, ROUTES } from "./lib/contants";
 
 export default function Home() {
@@ -45,8 +44,6 @@ export default function Home() {
           </ul>
         </section>
       </main>
-
-      <Footer />
     </>
   );
 }

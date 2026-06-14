@@ -3,41 +3,46 @@ import GitHubLogo from "../../assets/GitHubLogo.svg";
 import InstagramLogo from "../../assets/InstagramLogo.svg";
 import LinkedInLogo from "../../assets/LinkedInLogo.svg";
 import { LINKS } from "../../contants";
+import HomeLink from "../HomeLink/HomeLink";
 import "./Footer.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <>
       <hr />
-      <div className="social-links" aria-label="Social links">
-        <a target="_blank" href={LINKS.GitHub}>
-          <Image
-            src={GitHubLogo}
-            alt="GitHub logo"
-            width={24}
-            height={24}
-            unoptimized
-          />
-        </a>
-        <a target="_blank" href={LINKS.LinkedIn}>
-          <Image
-            src={LinkedInLogo}
-            alt="LinkedIn logo"
-            width={24}
-            height={24}
-            unoptimized
-          />
-        </a>
-        <a target="_blank" href={LINKS.Instagram}>
-          <Image
-            src={InstagramLogo}
-            alt="Instagram logo"
-            width={24}
-            height={24}
-            unoptimized
-          />
-        </a>
-      </div>
-    </footer>
+      <footer>
+        <div className="social-links" aria-label="Social links">
+          <a target="_blank" href={LINKS.GitHub}>
+            <Image
+              src={GitHubLogo}
+              alt="GitHub logo"
+              width={24}
+              height={24}
+              unoptimized
+            />
+          </a>
+          <a target="_blank" href={LINKS.LinkedIn}>
+            <Image
+              src={LinkedInLogo}
+              alt="LinkedIn logo"
+              width={24}
+              height={24}
+              unoptimized
+            />
+          </a>
+          <a target="_blank" href={LINKS.Instagram}>
+            <Image
+              src={InstagramLogo}
+              alt="Instagram logo"
+              width={24}
+              height={24}
+              unoptimized
+            />
+          </a>
+        </div>
+
+        <HomeLink />
+      </footer>
+    </>
   );
 }
