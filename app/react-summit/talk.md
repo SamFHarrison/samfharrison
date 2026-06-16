@@ -2,7 +2,7 @@
 
 _[Picture with Syntax] Commenting on bad quality of picture_
 
-Not sure why the picture are such bad quality, it can't have been shaky hands...
+Not sure why the pictures are such bad quality, it can't have been shaky hands...
 
 _[Picture of Kelvin at front of karaoke stage]_
 
