@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { input } from "./input";
-import { ROUTES } from "../../lib/contants";
 
 export default function GiftShop() {
   const batteryBanks = input.split("\n");
@@ -61,7 +59,6 @@ export default function GiftShop() {
 
   return (
     <>
-      <Link href={ROUTES.AoC.Home}>Back</Link>
       <h1>Lobby</h1>
       <p className="secondary-text">Day 3</p>
 

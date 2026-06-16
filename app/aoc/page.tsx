@@ -4,9 +4,14 @@ import { ROUTES } from "../lib/contants";
 export default function AdventOfCode() {
   return (
     <>
-      <Link href={ROUTES.Home}>Back</Link>
       <h1>Advent of Code</h1>
+      <p className="secondary-text">Living artifact</p>
 
+      <hr />
+
+      <p>I like tinkering with AoC when I have time.</p>
+
+      <h2>2025</h2>
       <ol>
         <li>
           <Link href={ROUTES.AoC.Home + ROUTES.AoC.SecretEntrance}>

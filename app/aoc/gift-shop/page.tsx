@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { input } from "./input";
 import dayTwo from "./solution";
-import { ROUTES } from "../../lib/contants";
 
 export default function GiftShop() {
   const part1 = dayTwo(input, 1);
@@ -9,7 +7,6 @@ export default function GiftShop() {
 
   return (
     <>
-      <Link href={ROUTES.AoC.Home}>Back</Link>
       <h1>Gift Shop</h1>
       <p className="secondary-text">Day 2</p>
 
