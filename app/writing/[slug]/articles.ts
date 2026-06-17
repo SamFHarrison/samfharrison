@@ -26,4 +26,8 @@ export const articleList: ArticleList = [
     title: "Anecdotes",
     slug: "anecdotes",
   },
+  {
+    title: "The Untrustworthiness of AI Interfaces",
+    slug: "the-untrustworthiness-of-ai-interfaces",
+  },
 ];
