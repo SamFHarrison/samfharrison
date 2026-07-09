@@ -5,6 +5,7 @@ export const LINKS = {
   X: "https://x.com/samfharrison",
   NatWestChatGPTApp:
     "https://chatgpt.com/apps/natwest-mortgages/asdk_app_69e9dba5d8cc81919a0aa497395b1769",
+  ThemeManagerLibrary: "https://github.com/SamFHarrison/theme-manager",
 };
 
 export const ROUTES = {

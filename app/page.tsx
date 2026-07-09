@@ -21,9 +21,27 @@ export default function Home() {
 
           <ul>
             <li>
-              <Link href={LINKS.NatWestChatGPTApp}>
-                NatWest Mortgages ChatGPT App
-              </Link>
+              <div>
+                <Link href={LINKS.NatWestChatGPTApp}>
+                  NatWest Mortgages ChatGPT App
+                </Link>
+                <br />
+                <p className="secondary-text">
+                  Start your NatWest mortgage journey inside ChatGPT
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <div>
+                <Link href={LINKS.ThemeManagerLibrary}>
+                  @bigsams/theme-manager
+                </Link>
+                <br />
+                <p className="secondary-text">
+                  Concise library for managing theming in React apps
+                </p>
+              </div>
             </li>
           </ul>
         </section>
