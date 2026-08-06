@@ -7,17 +7,16 @@ export default function Home() {
 
   return (
     <>
-      <h1>Sam F-Harrison</h1>
-
-      <p className="secondary-text">Software Engineer, UI</p>
-
-      <hr />
-
       <main>
-        <p>Welcome to my corner of the web. 👋🏼</p>
+        <h1>Sam F-Harrison</h1>
+        <p className="secondary-text">Frontend Software Engineer</p>
+
+        <hr />
+
+        <p>I build interfaces, frontend platforms and developer tools.</p>
 
         <section>
-          <h2>Projects</h2>
+          <h2>Work</h2>
 
           <ul>
             <li>
@@ -27,7 +26,8 @@ export default function Home() {
                 </Link>
                 <br />
                 <p className="secondary-text">
-                  Start your NatWest mortgage journey inside ChatGPT
+                  The UK's first ChatGPT app from a bank that helps customers
+                  explore mortgages conversationally.
                 </p>
               </div>
             </li>
@@ -39,7 +39,8 @@ export default function Home() {
                 </Link>
                 <br />
                 <p className="secondary-text">
-                  Concise library for managing theming in React apps
+                  Open-source React theming library designed to support scalable
+                  design-system architecture.
                 </p>
               </div>
             </li>
@@ -47,7 +48,7 @@ export default function Home() {
         </section>
 
         <section>
-          <h2>Writing</h2>
+          <h2>Notes</h2>
 
           <ul>
             {articleList.map((article) => {

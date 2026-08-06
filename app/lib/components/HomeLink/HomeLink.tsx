@@ -9,7 +9,7 @@ export default function HomeLink() {
   const isHomePage = pathname === "/";
 
   if (isHomePage) {
-    return <span className="secondary-text">samfharrison.com</span>;
+    return;
   }
 
   return (
