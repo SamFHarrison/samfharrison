@@ -1,3 +1,9 @@
 <img src="https://visitor-badge.laobi.icu/badge?page_id=SamFHarrison.SamFHarrison&" />
 
-## 👋 Hi, I'm Sam.
+# Hey, I'm Sam 👋🏼
+
+A frontend-focused software engineer
+
+Currently building software at NatWest Group where I work on customer-facing mortgage experiences, frontend platforms, design systems and developer tooling
+
+[samfharrison.com](https://samfharrison.com)
