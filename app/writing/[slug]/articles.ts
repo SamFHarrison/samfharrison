@@ -15,8 +15,8 @@ export const articleList: ArticleList = [
     slug: "how-i-git",
   },
   {
-    title: "'Feel like shit' Checklist",
-    slug: "feel-like-shit-checklist",
+    title: "My 'Feel like shit' Checklist",
+    slug: "my-feel-like-shit-checklist",
   },
   {
     title: "I Wish More People Would Knock On My Door",
