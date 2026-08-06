@@ -1,5 +1,3 @@
-<img src="https://visitor-badge.laobi.icu/badge?page_id=SamFHarrison.SamFHarrison&" />
-
 # Hey, I'm Sam 👋🏼
 
 A frontend-focused software engineer
