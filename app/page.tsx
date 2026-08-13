@@ -13,7 +13,10 @@ export default function Home() {
 
         <hr />
 
-        <p>I build interfaces, frontend platforms and developer tools.</p>
+        <p>
+          I build web applications, design systems, developer tools, and novel
+          interfaces.
+        </p>
 
         <section>
           <h2>Work</h2>
