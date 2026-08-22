@@ -14,7 +14,7 @@ export default function Home() {
         <hr />
 
         <p>
-          I build web applications, design systems, developer tools, and novel
+          Building web applications, design systems, developer tools, and novel
           interfaces.
         </p>
 
