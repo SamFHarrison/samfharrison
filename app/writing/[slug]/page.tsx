@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { articleList } from "./articles";
-import { ROUTES } from "../../lib/contants";
 
 export default async function Page({
   params,
