@@ -1,11 +1,4 @@
 :root {
-  --sfh-bg: #19191d;
-  --sfh-bg-code: #282c34;
-
-  --sfh-font-primary: #f3f3f3;
-  --sfh-font-secondary: #f3f3f350;
-  --sfh-font-code: #abb2bf;
-
   --sfh-main-width: 600px;
 }
 
@@ -15,8 +8,8 @@ body {
   margin: 0 auto;
   padding: 1rem 1rem 0;
 
-  background-color: var(--sfh-bg);
-  color: var(--sfh-font-primary);
+  background-color: var(--sfh-gen-color-bg-page);
+  color: var(--sfh-gen-color-text-strong);
 
   font-feature-settings: "ss03", "ss09";
   -webkit-font-smoothing: antialiased;
@@ -33,6 +26,7 @@ h1 {
   letter-spacing: -0.2px;
   margin: 0;
   padding: 2rem 0 0.5rem;
+  text-wrap: balance;
 
   /* Optically aligning the leading edge of the letters */
   transform: translateX(-2.8px);
@@ -45,6 +39,7 @@ h2 {
   letter-spacing: 0.4px;
   margin: 0;
   padding: 1.5rem 0 0.5rem;
+  text-wrap: balance;
 }
 
 h3 {
@@ -52,6 +47,7 @@ h3 {
   line-height: 130%;
   margin: 0;
   padding: 1rem 0 0.5rem;
+  text-wrap: balance;
 }
 
 p,
@@ -63,6 +59,7 @@ li {
 
 p {
   padding: 0.5rem 0;
+  text-wrap: pretty;
 }
 
 .secondary-text {
@@ -77,13 +74,14 @@ a {
   height: 1.5rem;
   color: inherit;
   width: fit-content;
+  text-decoration: underline;
   text-decoration-thickness: 2%;
   text-underline-offset: 20%;
-  text-decoration-color: var(--sfh-font-secondary);
+  text-decoration-color: var(--sfh-cmp-color-anchor-underline-default);
   transition: all 150ms ease-out;
 
   &:hover {
-    text-decoration-color: var(--sfh-font-primary);
+    text-decoration-color: var(--sfh-cmp-color-anchor-underline-hover);
   }
 }
 
@@ -105,12 +103,12 @@ li {
 /* TODO: Style ordered list items to use numbers instead of '>' */
 li::before {
   content: ">";
-  color: var(--sfh-font-secondary);
+  color: var(--sfh-gen-color-text-subtle);
 }
 
 hr {
   height: 1px;
-  background-color: var(--sfh-font-secondary);
+  background-color: var(--sfh-gen-color-border-separator);
   border: none;
   border-radius: 999px;
   margin: 0.5rem 0;
@@ -123,8 +121,7 @@ code {
 }
 
 code.inline-code {
-  background-color: var(--sfh-bg-code);
-  color: var(--sfh-font-code);
+  background-color: var(--sfh-gen-color-bg-surface);
   padding: 0.2rem 0.3rem;
   border-radius: 0.25rem;
 }
