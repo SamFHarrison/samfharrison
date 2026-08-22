@@ -1,0 +1,8 @@
+.social-link {
+  color: var(--sfh-gen-color-text-subtle);
+  transition: color 150ms ease-out;
+
+  &:hover {
+    color: var(--sfh-gen-color-text-strong);
+  }
+}

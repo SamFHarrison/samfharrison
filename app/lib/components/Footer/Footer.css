@@ -2,24 +2,7 @@ footer {
   margin-bottom: 2rem;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0.5rem 0;
-
-  .social-links {
-    display: flex;
-    gap: 0.75rem;
-
-    a {
-      height: 24px;
-    }
-
-    a img {
-      opacity: 0.5;
-      transition: all 150ms ease-out;
-    }
-
-    a:hover img {
-      opacity: 1;
-    }
-  }
+  gap: 0.75rem;
 }

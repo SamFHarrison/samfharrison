@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "./lib/components";
 import HomeLink from "./lib/components/HomeLink/HomeLink";
+import "./colours.css";
 import "./globals.css";
 
 export const generateMetadata = (): Metadata => {
