@@ -1,5 +1,5 @@
 import type { MDXComponents } from "mdx/types";
-import { CodeBlock } from './app/lib/components';
+import { CodeBlock } from "./app/lib/components";
 
 const components: MDXComponents = {
   SecondaryText({ children, props }) {
@@ -10,7 +10,7 @@ const components: MDXComponents = {
     );
   },
 
-  pre: ({ children, ...props }: any) => {
+  pre: ({ children }: any) => {
     const preProps = children?.props;
 
     const raw =
@@ -20,9 +20,7 @@ const components: MDXComponents = {
         ? preProps.children.join("")
         : "";
 
-    const lang = (preProps?.className || "").replace("language-", "") || "ts";
-
-    return <CodeBlock code={raw} lang={lang as string} {...props} />;
+    return <CodeBlock code={raw} />;
   },
 
   code: ({ children }) => {

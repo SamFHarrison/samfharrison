@@ -115,9 +115,9 @@ hr {
 }
 
 code {
-  font-family: var(--font-geist-mono) !important;
-  font-size: 0.8125rem !important;
-  line-height: 100% !important;
+  font-family: var(--font-geist-mono);
+  font-size: 0.8125rem;
+  line-height: 100%;
 }
 
 code.inline-code {

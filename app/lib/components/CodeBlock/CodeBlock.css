@@ -1,14 +1,24 @@
-div:has(code.code-block) {
-  /** the !important's are for overwriting the library's inline styles */
-  padding: 0.75rem 1rem !important;
-  line-height: 120% !important;
-  border-radius: 1rem !important;
-  width: calc(var(--sfh-main-width) + 2rem) !important;
-  box-sizing: border-box !important;
+pre.code-block {
+  box-sizing: border-box;
+  width: calc(var(--sfh-main-width) + 2rem);
+  margin: 0.5em 0;
+  padding: 0.75rem 1rem;
+  overflow: auto;
   transform: translateX(-1rem);
 
-  @media (max-width: 800px) {
-    width: calc(100dvw - 1rem) !important;
+  background-color: var(--sfh-gen-color-bg-surface);
+  color: var(--sfh-gen-color-text-strong);
+  border-radius: 1rem;
+}
+
+pre.code-block > code {
+  color: inherit;
+  line-height: 120%;
+}
+
+@media (max-width: 800px) {
+  pre.code-block {
+    width: calc(100dvw - 1rem);
     max-width: calc(var(--sfh-main-width) + 1rem);
     transform: translateX(-0.5rem);
   }
