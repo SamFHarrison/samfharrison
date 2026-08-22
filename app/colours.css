@@ -1,0 +1,44 @@
+/*
+ * This follows Radix's scale system
+ * https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale
+*/
+
+:root {
+  --sfh-pri-color-mono-1: #fcfcfc;
+  --sfh-pri-color-mono-2: #f9f9f9;
+  --sfh-pri-color-mono-3: #f0f0f0;
+  --sfh-pri-color-mono-4: #e8e8e8;
+  --sfh-pri-color-mono-5: #e0e0e0;
+  --sfh-pri-color-mono-6: #d9d9d9;
+  --sfh-pri-color-mono-7: #cecece;
+  --sfh-pri-color-mono-8: #bbbbbb;
+  --sfh-pri-color-mono-9: #8d8d8d;
+  --sfh-pri-color-mono-10: #838383;
+  --sfh-pri-color-mono-11: #646464;
+  --sfh-pri-color-mono-12: #202020;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sfh-pri-color-mono-1: #111111;
+    --sfh-pri-color-mono-2: #191919;
+    --sfh-pri-color-mono-3: #222222;
+    --sfh-pri-color-mono-4: #2a2a2a;
+    --sfh-pri-color-mono-5: #313131;
+    --sfh-pri-color-mono-6: #3a3a3a;
+    --sfh-pri-color-mono-7: #484848;
+    --sfh-pri-color-mono-8: #606060;
+    --sfh-pri-color-mono-9: #6e6e6e;
+    --sfh-pri-color-mono-10: #7b7b7b;
+    --sfh-pri-color-mono-11: #b4b4b4;
+    --sfh-pri-color-mono-12: #eeeeee;
+  }
+}
+
+:root {
+  --sfh-gen-color-bg-page: var(--sfh-pri-color-mono-1);
+  --sfh-gen-color-bg-surface: var(--sfh-pri-color-mono-2);
+  --sfh-gen-color-text-subtle: var(--sfh-pri-color-mono-11);
+  --sfh-gen-color-text-strong: var(--sfh-pri-color-mono-12);
+  --sfh-gen-color-border-separator: var(--sfh-pri-color-mono-6);
+}
