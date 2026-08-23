@@ -42,6 +42,9 @@
   --sfh-gen-color-text-strong: var(--sfh-pri-color-mono-12);
   --sfh-gen-color-border-separator: var(--sfh-pri-color-mono-6);
 
-  --sfh-cmp-color-anchor-underline-default: var(--sfh-pri-color-mono-8);
-  --sfh-cmp-color-anchor-underline-hover: var(--sfh-pri-color-mono-11);
+  --sfh-cmp-color-link-underline-default: var(--sfh-pri-color-mono-8);
+  --sfh-cmp-color-link-underline-hover: var(--sfh-pri-color-mono-12);
+
+  --sfh-cmp-color-sociallink-bg-default: var(--sfh-pri-color-mono-10);
+  --sfh-cmp-color-sociallink-bg-hover: var(--sfh-pri-color-mono-12);
 }

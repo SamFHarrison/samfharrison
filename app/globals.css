@@ -77,11 +77,11 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 2%;
   text-underline-offset: 20%;
-  text-decoration-color: var(--sfh-cmp-color-anchor-underline-default);
+  text-decoration-color: var(--sfh-cmp-color-link-underline-default);
   transition: all 150ms ease-out;
 
   &:hover {
-    text-decoration-color: var(--sfh-cmp-color-anchor-underline-hover);
+    text-decoration-color: var(--sfh-cmp-color-link-underline-hover);
   }
 }
 
