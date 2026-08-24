@@ -1,0 +1,8 @@
+.social-link {
+  color: var(--sfh-cmp-color-sociallink-bg-default);
+  transition: color 150ms ease-out;
+
+  &:hover {
+    color: var(--sfh-cmp-color-sociallink-bg-hover);
+  }
+}

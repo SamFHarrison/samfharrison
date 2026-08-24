@@ -11,6 +11,7 @@ export const LINKS = {
 export const ROUTES = {
   Home: "/",
   Writing: "/writing",
+  Notes: "/notes",
   AoC: {
     Home: "/aoc",
     SecretEntrance: "/secret-entrance",
