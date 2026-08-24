@@ -1,0 +1,10 @@
+.home-heading {
+  /* Optically aligning the leading edge of the letters */
+  transform: translateX(-2.8px);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

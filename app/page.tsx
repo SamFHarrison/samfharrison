@@ -1,71 +1,71 @@
 import Link from "next/link";
 import { articleList } from "./writing/[slug]/articles";
 import { LINKS, ROUTES } from "./lib/contants";
+import "./page.css";
 
 export default function Home() {
-  const articleTitles = articleList.map((article) => article.title);
-
   return (
-    <>
-      <main>
-        <h1>Sam F-Harrison</h1>
-        <p className="secondary-text">Frontend Software Engineer</p>
+    <main>
+      <h1 className="home-heading">Sam F-Harrison</h1>
+      <hr />
+      <p>
+        Frontend Software Engineer building web applications, design systems,
+        developer tools, and novel interfaces.
+      </p>
 
-        <hr />
+      <section>
+        <h2>Work</h2>
 
-        <p>
-          Building web applications, design systems, developer tools, and novel
-          interfaces.
-        </p>
+        <ul>
+          <li>
+            <div>
+              <Link href={LINKS.NatWestChatGPTApp}>
+                NatWest Mortgages ChatGPT App
+              </Link>
+              <br />
+              <p className="secondary-text">
+                The UK's first ChatGPT app from a bank that helps customers
+                explore mortgages conversationally.
+              </p>
+            </div>
+          </li>
 
-        <section>
-          <h2>Work</h2>
+          <li>
+            <div>
+              <Link href={LINKS.ThemeManagerLibrary}>
+                @bigsams/theme-manager
+              </Link>
+              <br />
+              <p className="secondary-text">
+                Open-source React theming library designed to support scalable
+                design-system architecture.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-          <ul>
-            <li>
-              <div>
-                <Link href={LINKS.NatWestChatGPTApp}>
-                  NatWest Mortgages ChatGPT App
-                </Link>
-                <br />
-                <p className="secondary-text">
-                  The UK's first ChatGPT app from a bank that helps customers
-                  explore mortgages conversationally.
-                </p>
-              </div>
-            </li>
-
-            <li>
-              <div>
-                <Link href={LINKS.ThemeManagerLibrary}>
-                  @bigsams/theme-manager
-                </Link>
-                <br />
-                <p className="secondary-text">
-                  Open-source React theming library designed to support scalable
-                  design-system architecture.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <section>
+      <section>
+        <div className="section-header">
           <h2>Notes</h2>
 
-          <ul>
-            {articleList.map((article) => {
-              return (
-                <li key={article.slug}>
-                  <Link href={`${ROUTES.Writing}/${article.slug}`}>
-                    {article.title}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </section>
-      </main>
-    </>
+          <Link href="/notes" className="secondary-text">
+            See all
+          </Link>
+        </div>
+
+        <ul>
+          {articleList.slice(0, 5).map((article) => {
+            return (
+              <li key={article.slug}>
+                <Link href={`${ROUTES.Writing}/${article.slug}`}>
+                  {article.title}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
+    </main>
   );
 }
