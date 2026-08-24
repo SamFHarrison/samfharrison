@@ -1,5 +1,6 @@
 import type { MDXComponents } from "mdx/types";
 import { CodeBlock } from "./app/lib/components";
+import NavLink, { NavLinkProps } from "./app/lib/components/HomeLink/NavLink";
 
 const components: MDXComponents = {
   SecondaryText({ children, props }) {
@@ -17,8 +18,8 @@ const components: MDXComponents = {
       typeof preProps?.children === "string"
         ? preProps.children
         : Array.isArray(preProps?.children)
-        ? preProps.children.join("")
-        : "";
+          ? preProps.children.join("")
+          : "";
 
     return <CodeBlock code={raw} />;
   },
@@ -42,6 +43,10 @@ const components: MDXComponents = {
         {children}
       </a>
     );
+  },
+
+  NavLink(props: NavLinkProps) {
+    return <NavLink {...props} />;
   },
 };
 
