@@ -2,6 +2,7 @@ import Link from "next/link";
 import { articleList } from "./writing/[slug]/articles";
 import { LINKS, ROUTES } from "./lib/contants";
 import "./page.css";
+import NavLink from "./lib/components/HomeLink/NavLink";
 
 export default function Home() {
   return (
@@ -18,11 +19,10 @@ export default function Home() {
 
         <ul>
           <li>
-            <div>
+            <div className="list-wrapper">
               <Link href={LINKS.NatWestChatGPTApp}>
                 NatWest Mortgages ChatGPT App
               </Link>
-              <br />
               <p className="secondary-text">
                 The UK's first ChatGPT app from a bank that helps customers
                 explore mortgages conversationally.
@@ -31,11 +31,10 @@ export default function Home() {
           </li>
 
           <li>
-            <div>
+            <div className="list-wrapper">
               <Link href={LINKS.ThemeManagerLibrary}>
                 @bigsams/theme-manager
               </Link>
-              <br />
               <p className="secondary-text">
                 Open-source React theming library designed to support scalable
                 design-system architecture.
@@ -49,9 +48,7 @@ export default function Home() {
         <div className="section-header">
           <h2>Notes</h2>
 
-          <Link href="/notes" className="secondary-text">
-            See all
-          </Link>
+          <NavLink href={ROUTES.Notes} label="See all" direction="forward" />
         </div>
 
         <ul>

@@ -1,16 +1,28 @@
 "use client";
 
 import Link from "next/link";
+import clsx from "clsx";
 import "./NavLink.css";
 
 export interface NavLinkProps {
   href: string;
   label: string;
+  direction?: "back" | "forward";
+  isAbsolute?: boolean;
 }
 
-export default function NavLink({ href, label }: NavLinkProps) {
+export default function NavLink({
+  href,
+  label,
+  direction = "back",
+  isAbsolute = false,
+}: NavLinkProps) {
+  const classes = clsx("nav-link secondary-text", {
+    "nav-link--forward": direction === "forward",
+    "nav-link--absolute": isAbsolute,
+  });
   return (
-    <Link className="nav-link secondary-text" href={href}>
+    <Link className={classes} href={href}>
       <svg
         width="18"
         height="18"

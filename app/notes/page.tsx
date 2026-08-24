@@ -7,7 +7,7 @@ export default function Notes() {
   return (
     <main>
       <nav>
-        <NavLink href={ROUTES.Home} label="Home" />
+        <NavLink href={ROUTES.Home} label="Home" isAbsolute />
       </nav>
 
       <h1>Notes</h1>
