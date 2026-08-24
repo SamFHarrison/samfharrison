@@ -6,7 +6,6 @@ import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Footer } from "./lib/components";
-import HomeLink from "./lib/components/HomeLink/HomeLink";
 import "./colours.css";
 import "./globals.css";
 
@@ -27,8 +26,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.className} ${GeistMono.variable}`}>
       <body>
-        <HomeLink />
-
         {children}
 
         <Footer />
